@@ -1,0 +1,68 @@
+body { background:#ddd; font-size:1em;}
+#holder { background:#fff; position:relative; padding-bottom:48px; padding-bottom:0px; margin:0px auto; }
+#deviceheader { height:24px; height:0px; background:#333; }
+#devicefooter { height:48px; height:0px; background:#333; position:absolute; bottom:0; left:0; width:100%; }
+.page{ padding-bottom:130px; position:relative; background:#d8d8d8; min-height:400px; }
+
+h1 { margin:10px 0 5px; padding:5px 15px; }
+h1 span { font-size:50%;}
+h3 { margin:5px 0 0; padding:5px 15px; }
+h4 { margin:0; padding:0 30px; }
+h5 { margin:0; padding:10px 15px; background:#2BE;  margin:10px 15px; color:#fff; font-weight:bold; }
+h5 span { font-weight:normal; float:right; }
+h6 { margin:0; margin:30px 0; color:#fff; font-weight:bold; font-size:150%; text-align:center; color:#2BE;}
+
+.header { height:64px; background:#2BE; color:#fff; font-weight:bold; font-size:125%; }
+.header h1 { float:left; height:64px; line-height:64px; padding:0 0 0 15px; margin:0; }
+.header .back { width:50px; float:left; height:64px; line-height:68px; padding:0 15px; }
+.header .back a { color: #fff; font-size: 200%; }
+.header .home { width:65%; float:left; height:64px; line-height:64px; padding:0 0 0 15px; }
+.header .home a { color:#fff; }
+.header .questions-review { width:15%; float:right; height:64px; line-height:64px; text-align:right; padding:0 15px 0 0; }
+.header .answers-review { width:45%; float:right; height:32px; line-height:32px; text-align:right; padding:0 15px 0 0; }
+					
+
+.textarea-holder { padding:5px 15px 15px; width:100%; }
+textarea.user-answer { width:100%; padding:15px; border:0; border-radius:5px; min-height: 66px; }
+
+#categories { padding:10px; }
+.category { float:left; background:#bbb; margin:5px; padding:10px 20px 15px; color:#fff; cursor:pointer; position:relative; }
+.category.active { background:#8B3; }
+
+.hints { padding:10px 25px; }
+.hint { float:left; background:#8B3; margin:5px; padding:5px 10px; color:#fff; cursor:pointer; }
+
+.btn { padding:0 15px; width:100%;} 
+.btn p { padding:15px; text-align:center; background:#bbb; border-radius:5px; font-weight:bold; color:#fff; } 
+.last { position:absolute; bottom:15px; left:0; }
+.last-but-one { position:absolute; bottom:70px; left:0;}
+.blank p { background:#bbb;}
+.btn.active p { background:#8B3; cursor:pointer; }
+.btnYesNo { background: inherit; }
+.answer { background:#8B3; width:49%; border-radius:5px; font-weight:bold; color:#fff; padding:15px; text-align:center; cursor:pointer; }
+.answer-yes { float:left; }
+.answer-no { float:right; }
+
+.btn.tab { float:left; width: auto; padding: 0; margin: 10px; }
+.btn.tab p { background:#aaa; cursor:pointer; }
+.btn.tab p:hover { background:#2BE; }
+
+.answer-given .btn.tab.user-answer p { background:#D47A7A;}
+.answer-given .btn.tab.correct-answer p { background:#8B3;}
+
+
+.strength-bar { height:5px;  position:absolute; bottom:0; left:0; width:100%; background:#bbb; }
+.strength-bar span { background:#2BE; height:5px; display:block;}
+
+.category.showLevels { padding:0; }
+.showLevels .strength-bar, .showLevels .name { display:none; }
+
+.level-indicator { float:left; width:33%; height:20px; line-height:20px; text-align:center; display:none; font-size:75%; }
+.showLevels .level-indicator { display:inline; }
+.switch-views { font-size:75%; }
+
+ul li { float:left; background:#bbb; }
+ul li:hover { background:#8B3; }
+ul li a { display: inline-block; padding:10px; }
+ul li a:hover { text-decoration:none; }
+
