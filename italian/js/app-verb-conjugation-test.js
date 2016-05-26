@@ -38,12 +38,4 @@ var oApp = window.oApp || {};
         oApp.getNewItem();
     });
 
-
-
-    $('p.home').click(function(){
-        var HTML = $('.page').width() + ' :: ' + $('.verb input').width();
-        $('input').width($('.verb input').width() - 1);
-        $(this).html(HTML);
-    });
-
 }());
