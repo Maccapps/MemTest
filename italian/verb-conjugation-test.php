@@ -114,8 +114,7 @@
 		</div>
 
         <script src="../global/js/app.js"></script>	
-<?php require_once 'verb-conjugation-test-data.php'; ?>
-<script>var data = {"verbs":{"are":[{"it":"parlare","en":"to speak"},{"it":"pagare","en":"to pay"},{"it":"mangiare","en":"to eat"},{"it":"lavare","en":"to work"}]}};</script>
+        <script>var data = {"verbs":{"are":[{"it":"parlare","en":"to speak"},{"it":"pagare","en":"to pay"},{"it":"mangiare","en":"to eat"},{"it":"lavare","en":"to work"}]}};</script>
         <script src="js/app.js"></script>	
         <script src="js/app-verb-conjugation-test-functions.js"></script>	
         <script src="js/app-verb-conjugation-test.js"></script>	
