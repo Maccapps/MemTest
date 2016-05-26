@@ -2,22 +2,22 @@ p.menu-command { margin:20px; }
 .btn.half-width { float:left; width:50%; margin-bottom:10px; cursor: pointer; }
 .btn.half-width p { padding:10px; }
 
-h1 { margin:0 0 0 45px; padding:0; }
-h2 { margin:0 0 0 45px; padding:0; font-size:80%;  font-style: igtalic; color:#888; }
+h1 { margin:10px 0 0 45px; padding:0; }
+h2 { margin:0 0 10px 45px; padding:0; font-size:80%;  font-style: igtalic; color:#888; }
 
 .verb-questions { display:inline-block; }
 
 .verb-questions .item { margin-top:10px;  }
 .verb-questions .item label { width:100%; display:inline-block; height: 30px; padding-left: 50px; line-height: 30px; color:#888; font-size:90%; display:none; }
 .translation { color:#aaa; font-size: 90%; }
-.verb-questions .item.verb label { font-weight:bold; font-size:110%; color:#333;}
+.verb-questions .item.verb label { font-weight:bold; font-size:110%; color:#333; display:block;}
 .verb-questions .item div { width:100%; display:inline-block; }
 .verb-questions .item .col-pronoun { vertical-align: text-bottom; width:45px; height:30px; display:inline-block; margin:0; padding: 0 3px 0 0; border:0; line-height: 30px; text-align: right; }
 .verb-questions .item input { vertical-align: text-bottom; width:254px; height:30px; display:inline-block; margin:0; padding:0 5px; border:0; border-bottom:1px solid #888; }
 .compound .verb-questions .item input { width:125px; }
 .verb-questions .item .input-2 { display:none; }
 .compound .verb-questions .item .input-2 { display:inline-block; }
-.verb-questions .item em {vertical-align: text-bottom; background:#eee; width:30px; height:30px; display:inline-block; margin:0; padding:0; border:0; }
+.verb-questions .item em { cursor:pointer; vertical-align: text-bottom; width:30px; height:30px; display:inline-block; margin:0; padding:0; border:0; line-height: 30px; text-align: center; font-style: normal; color: #888; font-size: 80%; font-weight: bold; }
 
 hr { border-bottom:1px solid #bbb; margin:20px 20px 0; }
 

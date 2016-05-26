@@ -15,8 +15,8 @@ var oApp = window.oApp || {};
 
     $('.verb-questions').on('keyup', 'input', function(){
         var el = $(this),
-            val = el.val(),
-            answer = el.data('correct'),
+            val = el.val().toLowerCase(),
+            answer = el.data('correct').toLowerCase(),
             isCorrect = val === answer;
 
         if (isCorrect) {

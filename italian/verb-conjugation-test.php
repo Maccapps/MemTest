@@ -27,7 +27,7 @@
                             <div>
                                 <span class="col-pronoun"> &nbsp; </span>
                                 <input placeholder="english translation" data-correct=""/>
-                                <em></em>
+                                <em>?</em>
                             </div>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                                     <span class="col-pronoun jsColPronoun">io</span>
                                     <input class="input-1" placeholder="..." data-correct=""/>
                                     <input class="input-2" placeholder="..." data-correct=""/>
-                                    <em></em>
+                                    <em>?</em>
                                 </div>
                             </div>
                         </div>
@@ -55,7 +55,7 @@
                                     <span class="col-pronoun jsColPronoun">tu</span>
                                     <input class="input-1" placeholder="..." data-correct=""/>
                                     <input class="input-2" placeholder="..." data-correct=""/>
-                                    <em></em>
+                                    <em>?</em>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                                     <span class="col-pronoun jsColPronoun">lui/lei</span>
                                     <input class="input-1" placeholder="..." data-correct=""/>
                                     <input class="input-2" placeholder="..." data-correct=""/>
-                                    <em></em>
+                                    <em>?</em>
                                 </div>
                             </div>
                         </div>
@@ -77,7 +77,7 @@
                                     <span class="col-pronoun jsColPronoun">noi</span>
                                     <input class="input-1" placeholder="..." data-correct=""/>
                                     <input class="input-2" placeholder="..." data-correct=""/>
-                                    <em></em>
+                                    <em>?</em>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +88,7 @@
                                     <span class="col-pronoun jsColPronoun">voi</span>
                                     <input class="input-1" placeholder="..." data-correct=""/>
                                     <input class="input-2" placeholder="..." data-correct=""/>
-                                    <em></em>
+                                    <em>?</em>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +99,7 @@
                                     <span class="col-pronoun jsColPronoun">loro</span>
                                     <input class="input-1" placeholder="..." data-correct=""/>
                                     <input class="input-2" placeholder="..." data-correct=""/>
-                                    <em></em>
+                                    <em>?</em>
                                 </div>
                             </div>
                         </div>
