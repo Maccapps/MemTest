@@ -34,6 +34,7 @@
 
                     <hr/>
                     <h1> &nbsp; </h1>
+                    <h2> &nbsp; </h2>
 
                     <div class="verb-questions-holder">
 
@@ -114,7 +115,7 @@
 
         <script src="../global/js/app.js"></script>	
 <?php require_once 'verb-conjugation-test-data.php'; ?>
-<script>var data = <?php echo json_encode($data, true); ?>;</script>
+<script>var data = {"verbs":{"are":[{"it":"parlare","en":"to speak"},{"it":"pagare","en":"to pay"},{"it":"mangiare","en":"to eat"},{"it":"lavare","en":"to work"}]}};</script>
         <script src="js/app.js"></script>	
         <script src="js/app-verb-conjugation-test-functions.js"></script>	
         <script src="js/app-verb-conjugation-test.js"></script>	

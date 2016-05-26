@@ -53,6 +53,7 @@ var oApp = window.oApp || {};
         $('.verb input').attr('data-correct', oApp.verb.en);
 
         $('h1').html(oApp.tense.displayName);
+        $('h2').html('( ' + oApp.tense.example + ' )');
 
         if (oApp.tense.compound) {
             $('.verb-questions-holder').addClass('compound');

@@ -13,26 +13,31 @@ var oApp = window.oApp || {};
         present_perfect: {
             name: 'present_perfect',
             displayName: 'Present Perfect',
+            example: 'I have spoken',
             compound: false
         },
         present: {
             name: 'present',
             displayName: 'Present',
+            example: 'I speak',
             compound: true
         },
         present_conditional: {
             name: 'present_conditional',
             displayName: 'Present Conditional',
+            example: 'I would speak',
             compound: false
         },
         past_perfect: {
             name: 'past_perfect',
             displayName: 'Past Perfect',
+            example: 'I had spoken',
             compound: true
         },
         future_indicative: {
             name: 'future_indicative',
             displayName: 'Future Indicative',
+            example: 'I will speak',
             compound: false
         }
     };
