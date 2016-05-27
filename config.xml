@@ -13,6 +13,8 @@
 
     <icon src="memory-128.png" />
 
+    <allow-navigation href="http://*/*" />
+
     <gap:platform name="android" />
 
     <!--<preference name="orientation" value="portrait" />-->
@@ -51,5 +53,6 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
+    <gap:plugin name="org.apache.cordova.whitelist" />
 
 </widget>
