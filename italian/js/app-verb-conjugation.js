@@ -11,27 +11,29 @@ var oApp = window.oApp || {};
             options: {}
         };
 
-    oApp.highlightOptionsFromLocalStorage = function() {
+    oApp.highlightOptionsFromLocalStorage = function () {
+        var i;
+
         $('.btn.half-width').removeClass('active');
 
-        for(var i in ls.options['verbs']) {
-            if (ls.options['verbs'][i] === 1) {
+        for (i in ls.options.verbs) {
+            if (ls.options.verbs[i] === 1) {
                 $('.btn.half-width[data-name="verbs-' + i + '"]').addClass('active');
             }
         }
 
-        for(var i in ls.options['tenses']) {
-            if (ls.options['tenses'][i] === 1) {
+        for (i in ls.options.tenses) {
+            if (ls.options.tenses[i] === 1) {
                 $('.btn.half-width[data-name="tenses-' + i + '"]').addClass('active');
             }
         }
 
-    }
+    };
 
     oApp.highlightOptionsFromLocalStorage();
 
 
-    $('.btn.half-width').click(function(){
+    $('.btn.half-width').click(function () {
         var el = $(this),
             name = el.data('name'),
             type,
@@ -40,9 +42,8 @@ var oApp = window.oApp || {};
         name = name.split('-');
         type = name.shift();
         name = name.join('-');
-console.log(name, type);
 
-        el.toggleClass('active')
+        el.toggleClass('active');
 
         if (active) {
             ls.options[type] = ls.options[type] || {};
@@ -56,8 +57,8 @@ console.log(name, type);
 
     });
 
-    $('.btnContinue').click(function(){
-        window.location= 'verb-conjugation-test.php';
+    $('.btnContinue').click(function () {
+        window.location = 'verb-conjugation-test.php';
     });
 
 

@@ -20,6 +20,7 @@
                     <div class="header">
                         <p class="back"><a href="verb-conjugation.php">&#x25c0;</a></p>
                         <p class="home">Verb Conjugation</p>
+                        <p class="refresh"> &nbsp; </p>
                     </div>
 
                     <div class="verb-questions jsVerb">
@@ -114,11 +115,6 @@
 		</div>
 
         <script src="../global/js/app.js"></script>	
-        <?php /*
-        <?php require_once 'verb-conjugation-test-data.php'; ?>
-        <script>var data = <?php echo json_encode($data, true); ?>;</script>
-        */ ?>
-        <script>var data = {"verbs":{"are":[{"it":"parlare","en":"to speak"},{"it":"pagare","en":"to pay"},{"it":"mangiare","en":"to eat"},{"it":"lavare","en":"to work"},{"it":"cercare","en":"to look for"},{"it":"cominciare","en":"to start"}]}};</script>
         <script src="js/app.js"></script>	
         <script src="js/app-verb-conjugation-test-functions.js"></script>	
         <script src="js/app-verb-conjugation-test.js"></script>	

@@ -1,4 +1,4 @@
-/*globals $, data*/
+/*globals $*/
 /*jslint eqeq:true plusplus:true*/
 
 var oApp = window.oApp || {};
@@ -6,6 +6,14 @@ var oApp = window.oApp || {};
 (function () {
 
     'use strict';
+
+    oApp.loadJsonAndGetNewItem = function () {
+        $.getJSON('http://isig.co.uk/json/italian-verb-test', function (json) {
+            oApp.ls.data = json.data;
+            oApp.setLs(oApp.ls);
+            oApp.getNewItem();
+        });
+    };
 
     oApp.getNewItem = function () {
 
@@ -24,7 +32,7 @@ var oApp = window.oApp || {};
 
     oApp.getRandomVerb = function () {
 
-        var list = data.verbs.are,
+        var list = oApp.ls.data.verbs.are,
             iddx = oApp.rand(0, list.length - 1),
             verb = list[iddx];
 
@@ -93,6 +101,7 @@ var oApp = window.oApp || {};
 
     };
 
+    //  I speak / I am speaking
     oApp.setConjugationsPresent = function () {
 
         var items = [];
@@ -119,6 +128,7 @@ var oApp = window.oApp || {};
 
     };
 
+    //  I have spoken / I spoke
     oApp.setConjugationsPresentPerfect = function () {
 
         var items = [],
@@ -131,6 +141,7 @@ var oApp = window.oApp || {};
 
     };
 
+    //  I used to speak
     oApp.setConjugationsImperfect = function () {
 
         var items = [];
@@ -147,6 +158,7 @@ var oApp = window.oApp || {};
         oApp.currentVerb.items = items;
     };
 
+    //  I will speak
     oApp.setConjugationsFutureIndicative = function () {
 
         var items = [];
@@ -172,6 +184,7 @@ var oApp = window.oApp || {};
 
     };
 
+    //  I had spoken
     oApp.setConjugationsPastPerfect = function () {
 
         var items = [],
@@ -184,6 +197,7 @@ var oApp = window.oApp || {};
 
     };
 
+    //  I would speak
     oApp.setConjugationsPresentConditional = function () {
 
         var items = [];

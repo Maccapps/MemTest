@@ -1,4 +1,4 @@
-/*globals $, phpJs*/
+/*globals $*/
 /*jslint eqeq:true plusplus:true*/
 
 var oApp = window.oApp || {};
@@ -7,12 +7,19 @@ var oApp = window.oApp || {};
 
     'use strict';
 
-    oApp.ls = oApp.getLs();
+    oApp.ls = oApp.getLs() || {};
     oApp.verb = {};
     oApp.tense = {};
     oApp.currentVerb = {};
+    oApp.clearData();
 
-    oApp.getNewItem();
+    oApp.init = (function () {
+        if (oApp.ls.data === undefined) {
+            oApp.loadJsonAndGetNewItem();
+        } else {
+            oApp.getNewItem();
+        }
+    }());
 
     $('.verb-questions').on('keyup', 'input', function () {
         var el = $(this),
@@ -53,6 +60,10 @@ var oApp = window.oApp || {};
 
     $('.btnContinue').click(function () {
         oApp.getNewItem();
+    });
+
+    $('.refresh').click(function () {
+        oApp.loadJsonAndGetNewItem();
     });
 
 }());
