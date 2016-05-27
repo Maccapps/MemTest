@@ -16,5 +16,13 @@ $data['verbs']['are'][] = array(
     'it' => 'lavare',
     'en' => 'to work'
 );
+$data['verbs']['are'][] = array(
+    'it' => 'cercare',
+    'en' => 'to look for'
+);
+$data['verbs']['are'][] = array(
+    'it' => 'cominciare',
+    'en' => 'to start'
+);
 
 ?>

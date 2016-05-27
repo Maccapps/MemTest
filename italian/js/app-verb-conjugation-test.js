@@ -8,33 +8,50 @@ var oApp = window.oApp || {};
     'use strict';
 
     oApp.ls = oApp.getLs();
-    oApp.verb;
-    oApp.tense;
+    oApp.verb = {};
+    oApp.tense = {};
+    oApp.currentVerb = {};
 
     oApp.getNewItem();
 
-    $('.verb-questions').on('keyup', 'input', function(){
+    $('.verb-questions').on('keyup', 'input', function () {
         var el = $(this),
-            val = el.val().toLowerCase(),
-            answer = el.data('correct').toLowerCase(),
-            isCorrect = val === answer;
+            val = el.val(),
+            id = el.data('el'),
+            idx = id.split('-'),
+            answer;
 
-        if (isCorrect) {
+        if (id == 'translation') {
+            answer = oApp.currentVerb.translation[0];
+        } else {
+            answer = oApp.currentVerb.items[idx[1]] !== undefined ? oApp.currentVerb.items[idx[1]][idx[0]] : '';
+        }
+
+        if (val.toLowerCase() === answer.toLowerCase()) {
             el.addClass('correct');
         } else {
             el.removeClass('correct');
         }
     });
 
-    $('.verb-questions').on('click', 'em', function(){
-        $(this).closest('.verb-questions').find('input').each(function(){
+    $('.verb-questions').on('click', 'em', function () {
+        $(this).closest('.verb-questions').find('input').each(function () {
             var el = $(this),
-                answer = el.data('correct');
+                id = el.data('el'),
+                idx = id.split('-'),
+                answer = '';
+
+            if (id == 'translation') {
+                answer = oApp.currentVerb.translation;
+            } else {
+                answer = oApp.currentVerb.items[idx[1]] !== undefined ? oApp.currentVerb.items[idx[1]][idx[0]] : '';
+            }
             el.val(answer);
+
         });
     });
 
-    $('.btnContinue').click(function(){
+    $('.btnContinue').click(function () {
         oApp.getNewItem();
     });
 

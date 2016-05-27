@@ -26,7 +26,7 @@
                         <div class="item verb"><label> &nbsp; </label>
                             <div>
                                 <span class="col-pronoun"> &nbsp; </span>
-                                <input placeholder="english translation" data-correct=""/>
+                                <input class="xyz" placeholder="english translation" data-el="translation"/>
                                 <em>?</em>
                             </div>
                         </div>
@@ -42,8 +42,8 @@
                             <div class="item s1"><label>1st Person Singular</label>
                                 <div>
                                     <span class="col-pronoun jsColPronoun">io</span>
-                                    <input class="input-1" placeholder="..." data-correct=""/>
-                                    <input class="input-2" placeholder="..." data-correct=""/>
+                                    <input class="input-1" data-el="0-0"/>
+                                    <input class="input-2" data-el="0-1"/>
                                     <em>?</em>
                                 </div>
                             </div>
@@ -53,8 +53,8 @@
                             <div class="item s2"><label>2nd Person Singular</label>
                                 <div>
                                     <span class="col-pronoun jsColPronoun">tu</span>
-                                    <input class="input-1" placeholder="..." data-correct=""/>
-                                    <input class="input-2" placeholder="..." data-correct=""/>
+                                    <input class="input-1" data-el="1-0"/>
+                                    <input class="input-2" data-el="1-1"/>
                                     <em>?</em>
                                 </div>
                             </div>
@@ -64,8 +64,8 @@
                             <div class="item s3"><label>3rd Person Singular</label>
                                 <div>
                                     <span class="col-pronoun jsColPronoun">lui/lei</span>
-                                    <input class="input-1" placeholder="..." data-correct=""/>
-                                    <input class="input-2" placeholder="..." data-correct=""/>
+                                    <input class="input-1" data-el="2-0"/>
+                                    <input class="input-2" data-el="2-1"/>
                                     <em>?</em>
                                 </div>
                             </div>
@@ -75,8 +75,8 @@
                             <div class="item p1"><label>1st Person Plural</label>
                                 <div>
                                     <span class="col-pronoun jsColPronoun">noi</span>
-                                    <input class="input-1" placeholder="..." data-correct=""/>
-                                    <input class="input-2" placeholder="..." data-correct=""/>
+                                    <input class="input-1" data-el="3-0"/>
+                                    <input class="input-2" data-el="3-1"/>
                                     <em>?</em>
                                 </div>
                             </div>
@@ -86,8 +86,8 @@
                             <div class="item p2"><label>2nd Person Plural</label>
                                 <div>
                                     <span class="col-pronoun jsColPronoun">voi</span>
-                                    <input class="input-1" placeholder="..." data-correct=""/>
-                                    <input class="input-2" placeholder="..." data-correct=""/>
+                                    <input class="input-1" data-el="4-0"/>
+                                    <input class="input-2" data-el="4-1"/>
                                     <em>?</em>
                                 </div>
                             </div>
@@ -97,8 +97,8 @@
                             <div class="item p3"><label>3rd Person Plural</label>
                                 <div>
                                     <span class="col-pronoun jsColPronoun">loro</span>
-                                    <input class="input-1" placeholder="..." data-correct=""/>
-                                    <input class="input-2" placeholder="..." data-correct=""/>
+                                    <input class="input-1" data-el="5-0"/>
+                                    <input class="input-2" data-el="5-1"/>
                                     <em>?</em>
                                 </div>
                             </div>
@@ -114,7 +114,11 @@
 		</div>
 
         <script src="../global/js/app.js"></script>	
-        <script>var data = {"verbs":{"are":[{"it":"parlare","en":"to speak"},{"it":"pagare","en":"to pay"},{"it":"mangiare","en":"to eat"},{"it":"lavare","en":"to work"}]}};</script>
+        <?php /*
+        <?php require_once 'verb-conjugation-test-data.php'; ?>
+        <script>var data = <?php echo json_encode($data, true); ?>;</script>
+        */ ?>
+        <script>var data = {"verbs":{"are":[{"it":"parlare","en":"to speak"},{"it":"pagare","en":"to pay"},{"it":"mangiare","en":"to eat"},{"it":"lavare","en":"to work"},{"it":"cercare","en":"to look for"},{"it":"cominciare","en":"to start"}]}};</script>
         <script src="js/app.js"></script>	
         <script src="js/app-verb-conjugation-test-functions.js"></script>	
         <script src="js/app-verb-conjugation-test.js"></script>	

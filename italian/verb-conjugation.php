@@ -32,9 +32,10 @@
 
                     <p class="menu-command">Select types of tenses</p>
                     <div style="display:inline-block;width:100%;">
-                        <div class="btn half-width" data-name="tenses-past_perfect"><p>Past Perfect</p></div>
                         <div class="btn half-width" data-name="tenses-present"><p>Present</p></div>
                         <div class="btn half-width" data-name="tenses-present_perfect"><p>Present Perfect</p></div>
+                        <div class="btn half-width" data-name="tenses-imperfect"><p>Imperfect</p></div>
+                        <div class="btn half-width" data-name="tenses-past_perfect"><p>Past Perfect</p></div>
                         <div class="btn half-width" data-name="tenses-present_conditional"><p>Present Conditional</p></div>
                         <div class="btn half-width" data-name="tenses-future_indicative"><p>Future Indicative</p></div>
                     </div>

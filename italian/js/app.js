@@ -10,17 +10,23 @@ var oApp = window.oApp || {};
     oApp.localStorageName = 'verb-conjugation';
 
     oApp.tenseTypes = {
-        present_perfect: {
-            name: 'present_perfect',
-            displayName: 'Present Perfect',
-            example: 'I have spoken',
-            compound: false
-        },
         present: {
             name: 'present',
             displayName: 'Present',
-            example: 'I speak',
+            example: 'I speak / I am speaking',
+            compound: false
+        },
+        present_perfect: {
+            name: 'present_perfect',
+            displayName: 'Present Perfect',
+            example: 'I have spoken / I spoke',
             compound: true
+        },
+        imperfect: {
+            name: 'imperfect',
+            displayName: 'Imperfect',
+            example: 'I used to speak',
+            compound: false
         },
         present_conditional: {
             name: 'present_conditional',
@@ -42,36 +48,52 @@ var oApp = window.oApp || {};
         }
     };
 
-    oApp.getPresentIndicativeOfAuxillaryVerb = function(verb)
-    {
+    oApp.getPresentIndicativeOfAuxillaryVerb = function (verb) {
+
         verb = verb === 'essere' ? 'essere' : 'avere';
         var presentIndicative = [];
 
-        switch(verb) {
+        switch (verb) {
 
-            case 'avere':
-                presentIndicative = [
-                    'ho',
-                    'hai',
-                    'ha',
-                    'abbiamo',
-                    'avete',
-                    'hanno'
-                ];
+        case 'avere':
+            presentIndicative = [
+                'ho',
+                'hai',
+                'ha',
+                'abbiamo',
+                'avete',
+                'hanno'
+            ];
             break;
 
         }
 
         return presentIndicative;
-    }
+    };
 
-    oApp.getLs = function() {
-        var ls = localStorage.getItem(oApp.localStorageName);
-        return JSON.parse(ls);
-    }
+    oApp.getImperfectIndicativeOfAuxillaryVerb = function (verb) {
 
-    oApp.setLs = function(data) {
-        localStorage.setItem(oApp.localStorageName, JSON.stringify(data));
-    }
+        verb = verb === 'essere' ? 'essere' : 'avere';
+        var imperfectIndicative = [];
+
+        switch (verb) {
+
+        case 'avere':
+            imperfectIndicative = [
+                'avevo',
+                'avevi',
+                'aveva',
+                'avevamo',
+                'avevate',
+                'avevano'
+            ];
+            break;
+
+        }
+
+        return imperfectIndicative;
+    };
+
+
 
 }());
