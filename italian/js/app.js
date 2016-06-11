@@ -66,6 +66,17 @@ var oApp = window.oApp || {};
             ];
             break;
 
+        case 'essere':
+            presentIndicative = [
+                'sono',
+                'sei',
+                'e',
+                'siamo',
+                'siete',
+                'sono'
+            ];
+            break;
+
         }
 
         return presentIndicative;
@@ -86,6 +97,17 @@ var oApp = window.oApp || {};
                 'avevamo',
                 'avevate',
                 'avevano'
+            ];
+            break;
+
+        case 'essere':
+            imperfectIndicative = [
+                'ero',
+                'eri',
+                'era',
+                'eravamo',
+                'eravate',
+                'erano'
             ];
             break;
 

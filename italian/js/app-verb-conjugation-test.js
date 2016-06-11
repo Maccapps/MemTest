@@ -10,7 +10,7 @@ var oApp = window.oApp || {};
     oApp.ls = oApp.getLs() || {};
     oApp.verb = {};
     oApp.tense = {};
-    oApp.currentVerb = {};
+    oApp.currentVerbTense = {};
     oApp.clearData();
 
     oApp.init = (function () {
@@ -29,9 +29,9 @@ var oApp = window.oApp || {};
             answer;
 
         if (id == 'translation') {
-            answer = oApp.currentVerb.translation[0];
+            answer = oApp.currentVerbTense.translation[0];
         } else {
-            answer = oApp.currentVerb.items[idx[1]] !== undefined ? oApp.currentVerb.items[idx[1]][idx[0]] : '';
+            answer = oApp.currentVerbTense.items[idx[1]] !== undefined ? oApp.currentVerbTense.items[idx[1]][idx[0]] : '';
         }
 
         if (val.toLowerCase() === answer.toLowerCase()) {
@@ -49,9 +49,9 @@ var oApp = window.oApp || {};
                 answer = '';
 
             if (id == 'translation') {
-                answer = oApp.currentVerb.translation;
+                answer = oApp.currentVerbTense.translation;
             } else {
-                answer = oApp.currentVerb.items[idx[1]] !== undefined ? oApp.currentVerb.items[idx[1]][idx[0]] : '';
+                answer = oApp.currentVerbTense.items[idx[1]] !== undefined ? oApp.currentVerbTense.items[idx[1]][idx[0]] : '';
             }
             el.val(answer);
 
