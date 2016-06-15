@@ -33,7 +33,7 @@ var oApp = window.oApp || {};
     oApp.highlightOptionsFromLocalStorage();
 
 
-    $('.btn.half-width').click(function () {
+    $('.btn.jsLsBtn').click(function () {
         var el = $(this),
             name = el.data('name'),
             type,
@@ -57,8 +57,12 @@ var oApp = window.oApp || {};
 
     });
 
-    $('.btnContinue').click(function () {
-        window.location = 'verb-conjugation-test.php';
+    $('.btnContinueRead').click(function () {
+        window.location = 'verb-conjugation-test.php?type=read';
+    });
+
+    $('.btnContinueWrite').click(function () {
+        window.location = 'verb-conjugation-test.php?type=write';
     });
 
 

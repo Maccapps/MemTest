@@ -14,6 +14,9 @@ var oApp = window.oApp || {};
     oApp.clearData();
 
     oApp.init = (function () {
+
+        oApp.type = (location.GET !== undefined && location.GET.obj !== undefined && location.GET.obj.type !== undefined) ? location.GET.obj.type : 'write';
+
         if (oApp.ls.data === undefined) {
             oApp.loadJsonAndGetNewItem();
         } else {

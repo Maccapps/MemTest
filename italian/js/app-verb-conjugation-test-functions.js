@@ -22,7 +22,11 @@ var oApp = window.oApp || {};
         oApp.verb = oApp.getRandomVerb();
         oApp.tense = oApp.getRandomTense();
 
-        oApp.updateScreenWithVerbAndTense();
+        if (oApp.type === 'write') {
+            oApp.updateScreenForWriteTest();
+        } else {
+            oApp.updateScreenForReadTest();
+        }
     };
 
     oApp.clearData = function () {
@@ -72,7 +76,9 @@ var oApp = window.oApp || {};
         return oApp.tenseTypes[tense];
     };
 
-    oApp.updateScreenWithVerbAndTense = function () {
+    oApp.updateScreenForWriteTest = function () {
+
+        $('#test-write').removeClass('hide');
 
         $('.verb label').html(oApp.verb.it);
         oApp.currentVerbTense = oApp.verb;
@@ -89,6 +95,7 @@ var oApp = window.oApp || {};
         }
 
         oApp.setConjugations();
+
     };
 
 
@@ -350,5 +357,81 @@ var oApp = window.oApp || {};
         oApp.currentVerbTense.items = items;
 
     };
+
+
+    oApp.updateScreenForReadTest = function () {
+
+        $('#test-read').removeClass('hide');
+
+        oApp.currentVerbTense = oApp.verb;
+
+        oApp.setConjugations();
+
+        var personList = ['s1', 's2', 's3', 'p1', 'p2', 'p3'],
+            personId = oApp.rand(0, personList.length - 1),
+            person = personList[personId];
+
+        if (oApp.currentVerbTense.items.length > 1) {
+            $('.verb h1').html(oApp.currentVerbTense.items[0][personId] + ' ' + oApp.currentVerbTense.items[1][personId]);
+        } else {
+            $('.verb h1').html(oApp.currentVerbTense.items[0][personId]);
+        }
+
+        $('.verb h2').html(oApp.currentVerbTense.en);
+
+        $('.jsPersonList .jsBtn[data-person="' + person + '"]').addClass('correct-answer');
+        $('.jsPersonTensesList .jsBtn[data-name="' + oApp.tense.name + '"]').addClass('correct-answer');
+
+    };
+
+    $('#test-read').on('click', '.jsPersonList .jsBtn', function () {
+
+        if ($('#test-read').hasClass('answer-given')) {
+            return false;
+        }
+
+        var el = $(this),
+            person = el.data('person');
+
+        $('.jsPersonList .jsBtn').removeClass('active');
+        el.addClass('active');
+        $('.jsPersonTensesList').addClass('hide');
+        $('.jsPersonTensesHeader').removeClass('hide');
+        $('.jsPersonTensesList[data-person="' + person + '"]').removeClass('hide');
+    });
+
+    $('#test-read').on('click', '.jsPersonTensesList .jsBtn', function () {
+
+        if ($('#test-read').hasClass('answer-given')) {
+            return false;
+        }
+
+        var el = $(this),
+            tense = el.data('name');
+        $('.jsPersonTensesList .jsBtn').removeClass('active');
+        el.addClass('active');
+        $('#test-read .btnCheck').addClass('active');
+    });
+
+    $('#test-read').on('click', '.btnCheck.active', function () {
+        $(this).addClass('hide');
+        $('#test-read .btnContinueRead').removeClass('hide');
+        $('#test-read .jsPersonList .active').addClass('user-answer');
+        $('#test-read .jsPersonTensesList .active').addClass('user-answer');
+        $('#test-read .jsPersonTensesList .jsBtn').removeClass('active');
+        $('#test-read .jsPersonList .jsBtn').removeClass('active');
+        $('#test-read').addClass('answer-given');
+    });
+
+    $('#test-read').on('click', '.btnContinueRead', function () {
+        $('#test-read').removeClass('answer-given');
+        $('#test-read .btnCheck').removeClass('active hide');
+        $('#test-read .btnContinueRead').addClass('hide');
+        $('#test-read .jsBtn').removeClass('active user-answer correct-answer');
+        $('.jsPersonTensesList').addClass('hide');
+        $('.jsPersonTensesHeader').addClass('hide');
+        oApp.getNewItem();
+    });
+
 
 }());

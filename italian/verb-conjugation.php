@@ -24,23 +24,24 @@
 
                     <p class="menu-command">Select types of verbs</p>
                     <div style="display:inline-block;width:100%;">
-                        <div class="btn half-width" data-name="verbs-are"><p>-are</p></div>
-                        <div class="btn half-width" data-name="verbs-ere"><p>-ere</p></div>
-                        <div class="btn half-width" data-name="verbs-ire"><p>-ire</p></div>
-                        <div class="btn half-width" data-name="verbs-irregular"><p>Irregular</p></div>
+                        <div class="btn half-width jsLsBtn" data-name="verbs-are"><p>-are</p></div>
+                        <div class="btn half-width jsLsBtn" data-name="verbs-ere"><p>-ere</p></div>
+                        <div class="btn half-width jsLsBtn" data-name="verbs-ire"><p>-ire</p></div>
+                        <div class="btn half-width jsLsBtn" data-name="verbs-irregular"><p>Irregular</p></div>
                     </div>
 
                     <p class="menu-command">Select types of tenses</p>
                     <div style="display:inline-block;width:100%;">
-                        <div class="btn half-width" data-name="tenses-present"><p>Present</p></div>
-                        <div class="btn half-width" data-name="tenses-present_perfect"><p>Present Perfect</p></div>
-                        <div class="btn half-width" data-name="tenses-imperfect"><p>Imperfect</p></div>
-                        <div class="btn half-width" data-name="tenses-past_perfect"><p>Past Perfect</p></div>
-                        <div class="btn half-width" data-name="tenses-present_conditional"><p>Present Conditional</p></div>
-                        <div class="btn half-width" data-name="tenses-future_indicative"><p>Future Indicative</p></div>
+                        <div class="btn half-width jsLsBtn" data-name="tenses-present"><p>Present</p></div>
+                        <div class="btn half-width jsLsBtn" data-name="tenses-present_perfect"><p>Present Perfect</p></div>
+                        <div class="btn half-width jsLsBtn" data-name="tenses-imperfect"><p>Imperfect</p></div>
+                        <div class="btn half-width jsLsBtn" data-name="tenses-past_perfect"><p>Past Perfect</p></div>
+                        <div class="btn half-width jsLsBtn" data-name="tenses-present_conditional"><p>Present Conditional</p></div>
+                        <div class="btn half-width jsLsBtn" data-name="tenses-future_indicative"><p>Future Indicative</p></div>
                     </div>
 
-                    <div class="btn last btnContinue active"><p>CONTINUE</p></div>
+                    <div class="btn half-width last btnContinue btnContinueRead active"><p>READ</p></div>
+                    <div class="btn half-width last last-right btnContinue btnContinueWrite active"><p>WRITE</p></div>
 
                 </div>
             
