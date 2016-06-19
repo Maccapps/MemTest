@@ -1,4 +1,4 @@
-p.menu-command { margin:20px; }
+p.menu-command { margin:16px 20px 8px; }
 .btn.half-width { float:left; width:50%; margin-bottom:10px; cursor: pointer; }
 .btn.half-width p { padding:10px; }
 .refresh { position:absolute; width:18px; height:18px; background:url(../img/refresh.png); top:22px; right:10px; cursor:pointer; }

@@ -28,6 +28,12 @@ var oApp = window.oApp || {};
             }
         }
 
+        for (i in ls.options.test) {
+            if (ls.options.test[i] === 1) {
+                $('.btn.half-width[data-name="test-' + i + '"]').addClass('active');
+            }
+        }
+
     };
 
     oApp.highlightOptionsFromLocalStorage();
@@ -57,13 +63,8 @@ var oApp = window.oApp || {};
 
     });
 
-    $('.btnContinueRead').click(function () {
-        window.location = 'verb-conjugation-test.php?type=read';
+    $('.btnContinue').click(function () {
+        window.location = 'verb-conjugation-test.php';
     });
-
-    $('.btnContinueWrite').click(function () {
-        window.location = 'verb-conjugation-test.php?type=write';
-    });
-
 
 }());

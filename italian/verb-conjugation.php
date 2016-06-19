@@ -40,8 +40,13 @@
                         <div class="btn half-width jsLsBtn" data-name="tenses-future_indicative"><p>Future Indicative</p></div>
                     </div>
 
-                    <div class="btn half-width last btnContinue btnContinueRead active"><p>READ</p></div>
-                    <div class="btn half-width last last-right btnContinue btnContinueWrite active"><p>WRITE</p></div>
+                    <p class="menu-command">Select types of test</p>
+                    <div style="display:inline-block;width:100%;">
+                        <div class="btn half-width jsLsBtn" data-name="test-read"><p>Read</p></div>
+                        <div class="btn half-width jsLsBtn" data-name="test-write"><p>Write</p></div>
+                    </div>
+
+                    <div class="btn last btnContinue"><p>CONTINUE</p></div>
 
                 </div>
             

@@ -21,12 +21,39 @@ var oApp = window.oApp || {};
         oApp.clearData();
         oApp.verb = oApp.getRandomVerb();
         oApp.tense = oApp.getRandomTense();
+        oApp.type = oApp.getRandomTestType();
 
-        if (oApp.type === 'write') {
-            oApp.updateScreenForWriteTest();
-        } else {
-            oApp.updateScreenForReadTest();
+        if (oApp.verb === undefined) {
+            alert('Select types of verbs');
+            window.location = 'verb-conjugation.php';
+            return false;
         }
+
+        if (oApp.tense === undefined) {
+            alert('Select types of tenses');
+            window.location = 'verb-conjugation.php';
+            return false;
+        }
+
+        if (oApp.type === undefined) {
+            alert('Select types of test');
+            window.location = 'verb-conjugation.php';
+            return false;
+        }
+
+        console.log(oApp.type);
+
+        switch (oApp.type) {
+
+        case 'write':
+            oApp.updateScreenForWriteTest();
+            break;
+
+        case 'read':
+            oApp.updateScreenForReadTest();
+            break;
+        }
+
     };
 
     oApp.clearData = function () {
@@ -74,6 +101,15 @@ var oApp = window.oApp || {};
             tense = list[iddx];
 
         return oApp.tenseTypes[tense];
+    };
+
+    oApp.getRandomTestType = function () {
+
+        var list = Object.keys(oApp.ls.options.test),
+            iddx = oApp.rand(0, list.length - 1),
+            type = list[iddx];
+
+        return type;
     };
 
     oApp.updateScreenForWriteTest = function () {
