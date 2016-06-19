@@ -114,6 +114,7 @@ var oApp = window.oApp || {};
 
     oApp.updateScreenForWriteTest = function () {
 
+        $('#test-read').addClass('hide');
         $('#test-write').removeClass('hide');
 
         $('.verb label').html(oApp.verb.it);
@@ -397,6 +398,7 @@ var oApp = window.oApp || {};
 
     oApp.updateScreenForReadTest = function () {
 
+        $('#test-write').addClass('hide');
         $('#test-read').removeClass('hide');
 
         oApp.currentVerbTense = oApp.verb;
