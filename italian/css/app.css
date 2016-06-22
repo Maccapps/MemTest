@@ -29,3 +29,6 @@ input.correct { background:#8B3; }
 
 #test-read .jsPersonList .jsBtn.active p { background:#2BE; }
 #test-read .jsPersonTensesList .jsBtn.active p { background:#2BE; }
+
+
+#test-time .item label { font-weight:bold; font-size:110%; color:#333; display:block; padding-left: 60px; }
