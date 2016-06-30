@@ -127,7 +127,7 @@ var oApp = window.oApp || {};
         $('.jsTimeDisplay').html(time.numbers);
         $('.jsTimeInput').val('').focus();
         oApp.answer = time.words;
-        $('.home').html(oApp.answer);
+        //$('.home').html(oApp.answer);
     
     };
 

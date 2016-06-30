@@ -32,3 +32,20 @@ input.correct { background:#8B3; }
 
 
 #test-time .item label { font-weight:bold; font-size:110%; color:#333; display:block; padding-left: 60px; }
+
+.show-it span.it { display:inline; }
+.show-it span.en { display:none; }
+
+.show-en span.en { display:inline; }
+.show-en span.it { display:none; }
+
+
+p.book-list-item { margin:16px 20px 8px; }
+
+span.en { color:#900; }
+
+.list-link { padding: 5px 8px; background: #2be; margin-right: 10px; border-radius: 4px; text-align: center; color:#fff; cursor:pointer; }
+.list-link a { color:#fff; }
+
+#book-list-chapters h1 span { font-size: 100%; }
+#book-list-sentences h1 span { font-size: 100%; }
