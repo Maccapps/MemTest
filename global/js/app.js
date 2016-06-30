@@ -9,6 +9,10 @@ var oApp = window.oApp || {};
 
     oApp.localStorageName = 'change-this-local-storage-name';
 
+    oApp.isBrowser = document.URL.indexOf( 'http://' ) === 0 || document.URL.indexOf( 'https://' ) === 0;
+
+    oApp.jsonFeedUrlBase = oApp.isBrowser ? 'http://local.isig.co.uk/json/' : 'http://www.isig.co.uk/json/';
+
     oApp.getLs = function () {
         var ls = localStorage.getItem(oApp.localStorageName);
         return JSON.parse(ls);
