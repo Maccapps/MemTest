@@ -12,7 +12,7 @@ var oApp = window.oApp || {};
     oApp.italianNumbers = [
         'zero', 'uno', 'due', 'tre', 'quattro', 'cinque', 'sei', 'sette', 'otto', 'nove',
         'dieci', 'undici', 'dodici', 'tredici', 'quattordici', 'quindici', 'sedici', 'diciassette', 'dicoitto', 'diciannove',
-        'venti', 'ventuno', 'ventidue', 'ventitre', 'ventiquattro', 'venticinque', 'ventisei', 'ventotto', 'ventinove'
+        'venti', 'ventuno', 'ventidue', 'ventitre', 'ventiquattro', 'venticinque', 'ventisei', 'ventisette', 'ventotto', 'ventinove'
     ];
 
     $('body').on('keyup', '.jsTimeInput', function () {
@@ -52,7 +52,7 @@ var oApp = window.oApp || {};
 
         var hour = oApp.rand(0, 23),
             mins = oApp.rand(0, 59),
-            random = oApp.rand(0, 1),
+            random = oApp.rand(0, 100),
             time;
 
         if(random === 0) {
@@ -121,13 +121,13 @@ var oApp = window.oApp || {};
     };
 
     oApp.getNewItem = function () {
-
         var time = oApp.getNewTimeObject();
+
+        $('.correct').removeClass('correct');
 
         $('.jsTimeDisplay').html(time.numbers);
         $('.jsTimeInput').val('').focus();
         oApp.answer = time.words;
-        //$('.home').html(oApp.answer);
     
     };
 

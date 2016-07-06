@@ -10,7 +10,6 @@ var oApp = window.oApp || {};
     oApp.ls = oApp.getLs() || {};
    
     oApp.showSentences = function (bookid, chapterid) {
-console.log('showSentences');
         var HTML = '';
 
         for (var i in oApp.ls.books.sentences[bookid][chapterid]) {
@@ -22,6 +21,9 @@ console.log('showSentences');
             HTML += '</span>';
             HTML += '</p>';
         }
+
+        oApp.ls.books.currentSentence = oApp.ls.books.currentSentence || 1;
+        oApp.setLs(oApp.ls);
 
         $('.jsBookListHolder').html(HTML);
     };
