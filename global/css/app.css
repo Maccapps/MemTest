@@ -2,7 +2,7 @@ body { background:#ddd; font-size:1em;}
 #holder { background:#fff; position:relative; padding-bottom:48px; padding-bottom:0px; margin:0px auto; }
 #deviceheader { height:24px; height:0px; background:#333; }
 #devicefooter { height:48px; height:0px; background:#333; position:absolute; bottom:0; left:0; width:100%; }
-.page{ padding-bottom:130px; position:relative; background:#d8d8d8; min-height:400px; }
+.page{ padding-bottom:130px; position:relative; background:#d8d8d8; min-height:325px; }
 
 h1 { margin:10px 0 5px; padding:5px 15px; }
 h1 span { font-size:50%;}
