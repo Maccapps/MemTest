@@ -26,7 +26,7 @@
                         <div class="item"><label class="jsTimeDisplay">22:30</label>
                             <div>
                                 <span class="col-pronoun"> &nbsp; </span>
-                                <input class="jsTimeInput" autofocus="autofocus" placeholder="enter the time in italian"/>
+                                <input class="jsTimeInput" autofocus="autofocus" autocorrect="off" placeholder="enter the time in italian"/>
                                 <em>?</em>
                             </div>
                         </div>
