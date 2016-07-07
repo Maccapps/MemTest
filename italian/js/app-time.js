@@ -131,6 +131,11 @@ var oApp = window.oApp || {};
     
     };
 
+    oApp.handleWindowResize = function () {
+        console.log('handleWindowResize');
+        oApp.setPageHeight();
+    };
+
     $('.btnContinue').click(function () {
         oApp.getNewItem();
     });
