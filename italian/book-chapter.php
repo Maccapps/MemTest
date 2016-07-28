@@ -17,7 +17,7 @@
 		<div id="holder">
 			<div id="deviceheader"></div>
             
-                <div class="page active page-with-pagination">
+                <div class="page active">
                     <div class="header">
                         <p class="back"><a href="book-list-chapters.php">&#x25c0;</a></p>
                         <p class="home">Books</p>
@@ -40,8 +40,6 @@
                 </div>
 
 
-			<div id="pagination"></div>
-            
 			<div id="devicefooter"></div>
 		</div>
 
