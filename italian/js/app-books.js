@@ -10,7 +10,7 @@ var oApp = window.oApp || {};
     oApp.ls = oApp.getLs() || {};
    
     oApp.loadBooksAndShowList = function () {
-        $.getJSON(oApp.jsonFeedUrlBase + 'italian-books/list', function (json) {
+        $.getJSON(oApp.jsonFeedUrlBase + 'italian-books/books', function (json) {
             oApp.ls.books = oApp.ls.books || {};
             oApp.ls.books.books = json.data.books;
             oApp.setLs(oApp.ls);
@@ -19,7 +19,7 @@ var oApp = window.oApp || {};
     };
 
     oApp.loadBookAndShowChapters = function (bookid) {
-        $.getJSON(oApp.jsonFeedUrlBase + 'italian-books/list-chapters/' + bookid, function (json) {
+        $.getJSON(oApp.jsonFeedUrlBase + 'italian-books/chapters/' + bookid, function (json) {
             oApp.ls.books.chapters = oApp.ls.books.chapters || {};
             oApp.ls.books.chapters[bookid] = json.data.chapters;
             oApp.setLs(oApp.ls);
@@ -28,7 +28,7 @@ var oApp = window.oApp || {};
     };
 
     oApp.loadChapterAndShowSentences = function (bookid, chapterid) {
-        $.getJSON(oApp.jsonFeedUrlBase + 'italian-books/list-sentences/' + bookid + '/' + chapterid, function (json) {
+        $.getJSON(oApp.jsonFeedUrlBase + 'italian-books/sentences/' + bookid + '/' + chapterid, function (json) {
             oApp.ls.books.sentences = oApp.ls.books.sentences || {};
             oApp.ls.books.sentences[bookid] = oApp.ls.books.sentences[bookid] || {};
             oApp.ls.books.sentences[bookid][chapterid] = json.data.sentences;

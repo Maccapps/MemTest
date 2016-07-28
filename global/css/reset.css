@@ -58,6 +58,6 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,addre
 legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figure,figcaption,hgroup,menu,footer,header,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0}
 *{box-sizing:border-box;font-size:1em;max-height:1000000px;font-weight:400}article,aside,canvas,figure,figure img,figcaption,hgroup,footer,header,nav,section,audio,video{display:block}a img{border:0}img{vertical-align:bottom;box-sizing:border-box;}
 .cf:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}a{color:#333;text-decoration:none}a:hover{color:#333;text-decoration:underline}
-* b {font-weight:700}.hide{display:none;}
+* b {font-weight:700}.hide{display:none !important;}
 ul { margin:15px; list-style-type: none; }
 a:hover { text-decoration:none; }

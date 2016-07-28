@@ -10,18 +10,29 @@ var oApp = window.oApp || {};
     oApp.ls = oApp.getLs() || {};
    
     oApp.showSentences = function (bookid, chapterid) {
-        var HTML = '';
+        console.log('showSentences', bookid, chapterid);
+        var HTML = '',
+            paragraphIdx = 1;
 
-        for (var i in oApp.ls.books.sentences[bookid][chapterid]) {
-            var sentence = oApp.ls.books.sentences[bookid][chapterid][i];
-            HTML += '<p class="book-list-item">';
-            HTML += '<span class="jsLangSwitch show-it">';
-            HTML += '<span class="it">' + sentence.it + '</span>';
-            HTML += '<span class="en">' + sentence.en + '</span>';
-            HTML += '</span>';
-            HTML += '</p>';
+        if (oApp.ls.books.sentences[bookid] !== undefined) {
+            for (var i in oApp.ls.books.sentences[bookid][chapterid]) {
+                var sentence = oApp.ls.books.sentences[bookid][chapterid][i],
+                    classes = ['new-paragraph-marker'];
+                if (sentence.np !== undefined && sentence.np === true) {
+                    classes.push('new-paragraph');
+                }
+                if (paragraphIdx == 1 || (sentence.np !== undefined && sentence.np === true)) {
+                    HTML += '<p class="' + classes.join(' ') + '">paragraph '+paragraphIdx+'</p>';
+                    paragraphIdx++;
+                }
+                HTML += '<p class="book-list-item">';
+                HTML += '<span class="jsLangSwitch show-it">';
+                HTML += '<span class="it">' + sentence.it + '</span>';
+                HTML += '<span class="en">' + sentence.en + '</span>';
+                HTML += '</span>';
+                HTML += '</p>';
+            }
         }
-
         oApp.ls.books.currentSentence = oApp.ls.books.currentSentence || 1;
         oApp.setLs(oApp.ls);
 

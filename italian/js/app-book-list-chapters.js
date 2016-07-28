@@ -13,15 +13,17 @@ var oApp = window.oApp || {};
 
         var HTML = '';
 
-        for (var i in oApp.ls.books.chapters[bookid]) {
-            var chapter = oApp.ls.books.chapters[bookid][i];
-            HTML += '<p class="book-list-item">';
-            HTML += '<span class="list-link jsShowChapter">' + i + '</span>';
-            HTML += '<span class="jsLangSwitch show-it">';
-            HTML += '<span class="it">' + chapter.it + '</span>';
-            HTML += '<span class="en">' + chapter.en + '</span>';
-            HTML += '</span>';
-            HTML += '</p>';
+        if (oApp.ls.books.chapters[bookid] !== undefined) {
+            for (var i in oApp.ls.books.chapters[bookid]) {
+                var chapter = oApp.ls.books.chapters[bookid][i];
+                HTML += '<p class="book-list-item">';
+                HTML += '<span class="list-link jsShowChapter">' + i + '</span>';
+                HTML += '<span class="jsLangSwitch show-it">';
+                HTML += '<span class="it">' + chapter.it + '</span>';
+                HTML += '<span class="en">' + chapter.en + '</span>';
+                HTML += '</span>';
+                HTML += '</p>';
+            }
         }
 
         $('.jsBookListHolder').html(HTML);
