@@ -8,7 +8,7 @@ var oApp = window.oApp || {};
     'use strict';
 
     oApp.loadJsonAndGetNewItem = function () {
-        $.getJSON(oApp.jsonFeedUrlBase + 'italian-verb-test', function (json) {
+        $.getJSON(oApp.jsonFeedUrlBase + 'italian-verbs/verbs', function (json) {
             oApp.ls.data = json.data;
             console.log(json.data);
             oApp.setLs(oApp.ls);
