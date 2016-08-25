@@ -1,0 +1,48 @@
+parlai
+I spoke
+parlasti
+you spoke
+parlò
+he spoke
+parlammo
+we spoke
+parlaste
+you spoke (plur.)
+parlarono
+they spoke
+credei; credetti
+I believed
+credesti
+you believed
+credé; credette
+he believed
+credemmo
+we believed
+credeste
+you believed (plur.)
+crederono; credettero
+they believed
+partii
+I left
+partisti
+you left
+partì
+he left
+partimmo
+we left
+partiste
+you left (plur.)
+partirono
+they left
+capii
+I understood
+capisti
+you understood
+capì
+he understood
+capimmo
+we understood
+capiste
+you understood (plur.)
+capirono
+they understood

@@ -1,0 +1,48 @@
+parlerei
+I would speak
+parleresti
+you would speak
+parlerebbe
+he would speak
+parleremmo
+we would speak
+parlereste
+you would speak (plur.)
+parlerebbero
+they would speak
+crederei
+I would believe
+crederesti
+you would believe
+crederebbe
+he would believe
+crederemmo
+we would believe
+credereste
+you would believe (plur.)
+crederebbero
+they would believe
+partirei
+I would leave
+partiresti
+you would leave
+partirebbe
+he would leave
+partiremmo
+we would leave
+partireste
+you would leave (plur.)
+partirebbero
+they would leave
+capirei
+I would understand
+capiresti
+you would understand
+capirebbe
+he would understand
+capiremmo
+we would understand
+capireste
+you would understand (plur.)
+capirebbero
+they would understand

@@ -1,0 +1,312 @@
+sono
+I am
+sei
+you are
+è
+he is
+siamo
+we are
+siete
+you are (plur.)
+sono
+they are
+sto
+I am (permanent state)
+stai
+you are (permanent state)
+sta
+he is (permanent state)
+stiamo
+we are (permanent state)
+state
+you are (permanent state) (plur.)
+stanno
+they are (permanent state)
+ho
+I have
+hai
+you have
+ha
+he has
+abbiamo
+we have
+avete
+you have (plur.)
+hanno
+they have
+faccio
+I do
+fai
+you do
+fa
+he does
+facciamo
+we do
+fate
+you do (plur.)
+fanno
+they do
+vado; vo
+I go
+vai
+you go
+va
+he goes
+andiamo
+we go
+andate
+you go (plur.)
+vanno
+they go
+do
+I give
+dai
+you give
+dà
+he gives
+diamo
+we give
+date
+you give (plur.)
+danno
+they give
+amo
+I love
+ami
+you love
+ama
+he loves
+amiamo
+we love
+amate
+you love (plur.)
+amano
+they love
+posso
+I can
+puoi
+you can
+può
+he can
+possiamo
+we can
+potete
+you can (plur.)
+possono
+they can
+so
+I know (facts and skills)
+sai
+you know (facts and skills)
+sa
+he knows (facts and skills)
+sappiamo
+we know (facts and skills)
+sapete
+you know (facts and skills) (plur.)
+sanno
+they know (facts and skills)
+devo; debbo
+I have to
+devi
+you have to
+deve
+he has to
+dobbiamo
+we have to
+dovete
+you have to (plur.)
+devono; debbono
+they have to
+prendo
+I take
+prendi
+you take
+prende
+he takes
+prendiamo
+we take
+prendete
+you take (plur.)
+prendono
+they take
+vedo; veggo
+I see
+vedi
+you see
+vede
+he sees
+vediamo
+we see
+vedete
+you see (plur.)
+vedono; veggono
+they see
+voglio; vò
+I want
+vuoi
+you want
+vuole
+he wants
+vogliamo
+we want
+volete
+you want (plur.)
+vogliono
+they want
+metto
+I put
+metti
+you put
+mette
+he puts
+mettiamo
+we put
+mettete
+you put (plur.)
+mettono
+they put
+bevo
+I drink
+bevi
+you drink
+beve
+he drinks
+beviamo
+we drink
+bevete
+you drink (plur.)
+bevono
+they drink
+leggo
+I read
+leggi
+you read
+legge
+he reads
+leggiamo
+we read
+leggete
+you read (plur.)
+leggono
+they read
+valgo
+I am worth
+vali
+you are worth
+vale
+he is worth
+valiamo; valghiamo
+we are worth
+valete
+you are worth (plur.)
+valgono; vagliono
+they are worth
+dico
+I say
+dici
+you say
+dice
+he says
+diciamo
+we say
+dite
+you say (plur.)
+dicono
+they say
+vengo
+I come
+vieni
+you come
+viene
+he comes
+veniamo
+we come
+venite
+you come (plur.)
+vengono
+they come
+sento
+I feel
+senti
+you feel
+sente
+he feels
+sentiamo
+we feel
+sentite
+you feel (plur.)
+sentono
+they feel
+muoio
+I die
+muori
+you die
+muore
+he dies
+moriamo
+we die
+morite
+you die (plur.)
+muoiono
+they die
+finisco
+I end
+finisci
+you end
+finisce
+he ends
+finiamo
+we end
+finite
+you end (plur.)
+finiscono
+they end
+dormo
+I sleep
+dormi
+you sleep
+dorme
+he sleeps
+dormiamo
+we sleep
+dormite
+you sleep (plur.)
+dormono
+they sleep
+esco
+I go out
+esci
+you go out
+esce
+he goes out
+usciamo
+we go out
+uscite
+you go out (plur.)
+escono
+they go out
+apro
+I open
+apri
+you open
+apre
+he opens
+apriamo
+we open
+aprite
+you open (plur.)
+aprono
+they open
+salgo
+I rise
+sali
+you rise
+sale
+he rises
+saliamo
+we rise
+salite
+you rise (plur.)
+salgono
+they rise

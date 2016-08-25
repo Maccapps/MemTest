@@ -1,0 +1,168 @@
+misi
+I put
+mettesti
+you put
+mise
+he put
+mettemmo
+we put
+metteste
+you put (plur.)
+misero
+they put
+bevvi; bevetti
+I drank
+bevesti
+you drank
+bevve; bevette
+he drank
+bevemmo
+we drank
+beveste
+you drank (plur.)
+bevvero; bevettero
+they drank
+vissi
+I lived
+vivesti
+you lived
+visse
+he lived
+vivemmo
+we lived
+viveste
+you lived (plur.)
+vissero
+they lived
+tenni
+I held
+tenesti
+you held
+tenne
+he held
+tenemmo
+we held
+teneste
+you held (plur.)
+tennero
+they held
+scrissi
+I wrote
+scrivesti
+you wrote
+scrisse
+he wrote
+scrivemmo
+we wrote
+scriveste
+you wrote (plur.)
+scrissero
+they wrote
+sedei; sedetti
+I sat
+sedesti
+you sat
+sedé; sedette
+he sat
+sedemmo
+we sat
+sedeste
+you sat (plur.)
+sederono; sedettero
+they sat
+lessi
+I read
+leggesti
+you read
+lesse
+he read
+leggemmo
+we read
+leggeste
+you read (plur.)
+lessero
+they read
+valsi
+I was worth
+valesti
+you were worth
+valse
+he was worth
+valemmo
+we were worth
+valeste
+you were worth (plur.)
+valsero
+they were worth
+rimasi
+I remained
+rimanesti
+you remained
+rimase
+he remained
+rimanemmo
+we remained
+rimaneste
+you remained (plur.)
+rimasero
+they remained
+diressi
+I directed
+dirigesti
+you directed
+diresse
+he directed
+dirigemmo
+we directed
+dirigeste
+you directed (plur.)
+diressero
+they directed
+scelsi
+I chose
+scegliesti
+you chose
+scelse
+he chose
+scegliemmo
+we chose
+sceglieste
+you chose (plur.)
+scelsero
+they chose
+dissi
+I said
+dicesti
+you said
+disse
+he said
+dicemmo
+we said
+diceste
+you said (plur.)
+dissero
+they said
+venni
+I came
+venisti
+you came
+venne
+he came
+venimmo
+we came
+veniste
+you came (plur.)
+vennero
+they came
+finii
+I ended
+finisti
+you ended
+finì
+he ended
+finimmo
+we ended
+finiste
+you ended (plur.)
+finirono
+they ended
