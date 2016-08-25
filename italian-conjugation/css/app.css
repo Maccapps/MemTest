@@ -1,3 +1,4 @@
+.refresh { position:absolute; width:18px; height:18px; background:url(../../global/img/refresh.png); top:22px; right:10px; cursor:pointer; }
 input { padding:5px 10px; width:341px;}
 .btn.onesixth-width { width:44px; margin:0 14px 0 0; float:left; padding:0; }
 .btn.onesixth-width p { padding:5px; }
