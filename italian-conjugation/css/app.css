@@ -1,4 +1,6 @@
-input { padding:5px 10px; }
+input { padding:5px 10px; width:341px;}
+.btn.onesixth-width { width:44px; margin:0 14px 0 0; float:left; padding:0; }
+.btn.onesixth-width p { padding:5px; }
 #results {  }
 .type { margin:10px 10px 0 9px ; border:1px solid #aaa; padding:5px 10px 0; background:#fff;}
 .type h2 {font-size:80%; font-weight:normal; color:#888; }

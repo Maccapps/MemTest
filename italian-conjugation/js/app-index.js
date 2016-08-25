@@ -7,6 +7,8 @@ var oApp = window.oApp || {};
 
     'use strict';
 
+    oApp.q = '';
+
     oApp.localStorageName = 'italian-conjugations';
 
     oApp.ls = oApp.getLs() || {};
@@ -28,10 +30,21 @@ var oApp = window.oApp || {};
         console.log(oApp.ls.conjugations)
     };
 
-    oApp.doSearch = function (q) {
-        console.log(q);
+    oApp.setPronounButtons = function () {
+        $('.jsPronounHolder .jsPronouns').each(function (idx) {
+            if (oApp.settings.pronouns[idx] === true) {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
+        });
+    };
+    oApp.setPronounButtons();
 
-        var tLoop = oApp.ls.conjugations,
+    oApp.doSearch = function () {
+
+        var q = oApp.q,
+            tLoop = oApp.ls.conjugations,
             tItem,
             hasPronouns,
             vLoop,
@@ -69,7 +82,7 @@ var oApp = window.oApp || {};
             HTML += '<div class="type"><h2>' + tItem + '</h2>';
             vLoop = results[tItem];
             for(vItem in vLoop) {
-                console.log(tItem, vLoop[vItem]);
+                //console.log(tItem, vLoop[vItem]);
                 HTML += '<div class="item"><p class="en">' + vLoop[vItem].en + '</p><p class="it">' + vLoop[vItem].it + '</p></div>';
             }
             HTML += '</div>';
@@ -92,7 +105,19 @@ var oApp = window.oApp || {};
         var el = $(this),
             q = el.val().toLowerCase();
 
-        oApp.doSearch(q);
+        oApp.q = q;
+        oApp.doSearch();
+    });
+
+    $('.jsPronounHolder .jsPronouns').click(function () {
+        var el = $(this),
+            isActive = !el.hasClass('active'),
+            idx = $('.jsPronounHolder .jsPronouns').index(el);
+
+        el.toggleClass('active');
+        oApp.settings.pronouns[idx] = isActive;
+        oApp.setPronounButtons();
+        oApp.doSearch();
     });
 
 }());
