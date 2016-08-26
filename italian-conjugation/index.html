@@ -24,7 +24,7 @@
                         <p class="refresh"> &nbsp; </p>
                     </div>
 
-                    <div class="jsPronounHolder" style="display:inline-block;width:100%; margin: 10px;">
+                    <div class="pronoun-holder jsPronounHolder">
                         <div class="btn onesixth-width jsPronouns"><p>1S</p></div>
                         <div class="btn onesixth-width jsPronouns"><p>2S</p></div>
                         <div class="btn onesixth-width jsPronouns"><p>3S</p></div>
@@ -35,9 +35,9 @@
 
 
 
-                    <div class="item">
+                    <div class="item searchInputHolder">
                         <div>
-                            <span class="col-pronoun"> &nbsp; </span>
+                            <span class="clear jsClearInput">X</span>
                             <input class="jsSearchInput" autofocus="autofocus" autocorrect="off" placeholder="search for english or italian">
                         </div>
                     </div>
@@ -46,12 +46,16 @@
 
                 </div>
             
+                <div id="clipboardTarget" data-clipboard-target="#clipboardTarget"></div>
+
 			<div id="devicefooter"></div>
 		</div>
 
+        <script src="../global/js/clipboard.min.js"></script>	
         <script src="../global/js/app.js"></script>	
         <script src="js/app.js"></script>
         <script src="js/app-index.js"></script>
+
     </body>
 
 </html>

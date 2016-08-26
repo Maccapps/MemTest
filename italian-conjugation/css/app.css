@@ -1,5 +1,12 @@
 .refresh { position:absolute; width:18px; height:18px; background:url(../../global/img/refresh.png); top:22px; right:10px; cursor:pointer; }
-input { padding:5px 10px; width:341px;}
+
+.pronoun-holder { display:inline-block;width:100%; margin: 10px 0 10px 12px; }
+
+.searchInputHolder { position:relative; }
+.searchInputHolder .clear { position: absolute; right: 16px; height: 31px; line-height: 31px; top: 1px; cursor:pointer; }
+input { padding:5px 10px; width:341px; margin: 0 0 0 9px;}
+#clipboardTarget { opacity:0; height:1px;}
+
 .btn.onesixth-width { width:44px; margin:0 14px 0 0; float:left; padding:0; }
 .btn.onesixth-width p { padding:5px; }
 #results {  }
@@ -9,3 +16,4 @@ input { padding:5px 10px; width:341px;}
 .type .item p { font-size:100%; line-height:22px;}
 .type .item p.en { background:url(../../global/img/flag-en.png) no-repeat 0px 2px; padding-left:26px; }
 .type .item p.it { background:url(../../global/img/flag-it.png) no-repeat 0px 2px; padding-left:26px; margin-bottom:10px; }
+

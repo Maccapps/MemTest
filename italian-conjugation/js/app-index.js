@@ -1,4 +1,4 @@
-/*globals $*/
+/*globals $, Clipboard*/
 /*jslint eqeq:true plusplus:true*/
 
 var oApp = window.oApp || {};
@@ -12,7 +12,9 @@ var oApp = window.oApp || {};
     oApp.localStorageName = 'italian-conjugations';
 
     oApp.ls = oApp.getLs() || {};
-   
+
+    //new Clipboard('#clipboardTarget');
+
     oApp.loadDataAndStart = function () {
         console.log('loadDataAndStart');
         $.getJSON(oApp.jsonFeedUrlBase + 'italian/conjugations', function (json) {
@@ -26,9 +28,7 @@ var oApp = window.oApp || {};
     oApp.settings = oApp.settings || {};
     oApp.settings.pronouns = [true, false, false, false, false, false];
 
-    oApp.start = function () {
-        console.log(oApp.ls.conjugations)
-    };
+
 
     oApp.setPronounButtons = function () {
         $('.jsPronounHolder .jsPronouns').each(function (idx) {
@@ -39,9 +39,17 @@ var oApp = window.oApp || {};
             }
         });
     };
-    oApp.setPronounButtons();
+
+
+    oApp.start = function () {
+        oApp.setPronounButtons();
+    };
 
     oApp.doSearch = function () {
+
+        if (oApp.q === '') {
+            return oApp.emptySearch();
+        }
 
         var q = oApp.q,
             tLoop = oApp.ls.conjugations,
@@ -51,24 +59,26 @@ var oApp = window.oApp || {};
             vItem,
             pLoop,
             pItem,
-            results = [],
-            HTML = '';
+            results = [];
 
-        for(tItem in tLoop) {
+
+        $('#results').html('');
+
+        for (tItem in tLoop) {
             //console.group(tItem);
             hasPronouns = tLoop[tItem].hasPronouns;
             vLoop = tLoop[tItem].data;
-            for(vItem in vLoop) {
+            for (vItem in vLoop) {
                 if (hasPronouns === false) {
-                    if (vLoop[vItem].en.toLowerCase().indexOf(q) > -1 || vLoop[vItem].it.toLowerCase().indexOf(q) > -1) {
-                        results[tItem] = results[tItem] ||[];
+                    if (q === tItem || (vLoop[vItem].en.toLowerCase().indexOf(q) > -1 || vLoop[vItem].it.toLowerCase().indexOf(q) > -1)) {
+                        results[tItem] = results[tItem] || [];
                         results[tItem].push(vLoop[vItem]);
                     }
                 } else {
                     pLoop = vLoop[vItem];
-                    for(pItem in pLoop) {
-                        if (oApp.settings.pronouns[pItem] === true && (pLoop[pItem].en.toLowerCase().indexOf(q) > -1 || pLoop[pItem].it.toLowerCase().indexOf(q) > -1)) {
-                            results[tItem] = results[tItem] ||[];
+                    for (pItem in pLoop) {
+                        if (oApp.settings.pronouns[pItem] === true && q === tItem || ((pLoop[pItem].en.toLowerCase().indexOf(q) > -1 || pLoop[pItem].it.toLowerCase().indexOf(q) > -1))) {
+                            results[tItem] = results[tItem] || [];
                             results[tItem].push(pLoop[pItem]);
                         }
                     }
@@ -77,11 +87,20 @@ var oApp = window.oApp || {};
             //console.groupEnd();
         }
         //console.log(results);
+        oApp.outputResults(results);
 
-        for(tItem in results) {
+    };
+
+    oApp.outputResults = function (results) {
+        var vLoop,
+            tItem,
+            vItem,
+            HTML = '';
+
+        for (tItem in results) {
             HTML += '<div class="type"><h2>' + tItem + '</h2>';
             vLoop = results[tItem];
-            for(vItem in vLoop) {
+            for (vItem in vLoop) {
                 //console.log(tItem, vLoop[vItem]);
                 HTML += '<div class="item"><p class="en">' + vLoop[vItem].en + '</p><p class="it">' + vLoop[vItem].it + '</p></div>';
             }
@@ -89,6 +108,36 @@ var oApp = window.oApp || {};
         }
 
         $('#results').html(HTML);
+    };
+
+    oApp.emptySearch = function () {
+        var tLoop = oApp.ls.conjugations,
+            hasPronouns,
+            vLoop,
+            pLoop,
+            results = [],
+            pItem,
+            tItem;
+
+        $('#results').html('');
+
+        for (tItem in tLoop) {
+            hasPronouns = tLoop[tItem].hasPronouns;
+            vLoop = tLoop[tItem].data;
+            results[tItem] = results[tItem] || [];
+            if (hasPronouns === false) {
+                results[tItem].push(vLoop[0]);
+            } else {
+                pLoop = vLoop[0];
+                for (pItem in pLoop) {
+                    if (oApp.settings.pronouns[pItem] === true) {
+                        results[tItem].push(vLoop[0][pItem]);
+                    }
+                }
+            }
+        }
+        oApp.outputResults(results);
+
     };
 
     if (oApp.ls.conjugations === undefined) {
@@ -101,7 +150,7 @@ var oApp = window.oApp || {};
         oApp.loadDataAndStart();
     });
 
-    $('.jsSearchInput').keyup(function(){
+    $('.jsSearchInput').keyup(function () {
         var el = $(this),
             q = el.val().toLowerCase();
 
@@ -118,6 +167,30 @@ var oApp = window.oApp || {};
         oApp.settings.pronouns[idx] = isActive;
         oApp.setPronounButtons();
         oApp.doSearch();
+    });
+
+    $('#results').on('click', 'h2', function () {
+        var el = $(this),
+            type = el.html();
+
+        $('.jsSearchInput').val(type);
+        oApp.q = type;
+        oApp.doSearch();
+    });
+
+    $('.jsClearInput').click(function () {
+        $('.jsSearchInput').val('');
+        oApp.q = '';
+        oApp.doSearch();
+    });
+
+    oApp.doSearch();
+
+    $('#results').on('click', '.item p', function () {
+        var el = $(this),
+            val = el.html();
+
+        $('#clipboardTarget').html(val).trigger('click');
     });
 
 }());
