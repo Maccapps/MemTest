@@ -1,0 +1,48 @@
+parlo
+I speak
+parli
+you speak
+parla
+he speaks
+parliamo
+we speak
+parlate
+you speak (plur.)
+parlano
+they speak
+credo
+I believe
+credi
+you believe
+crede
+he believes
+crediamo
+we believe
+credete
+you believe (plur.)
+credono
+they believe
+parto
+I leave
+parti
+you leave
+parte
+he leaves
+partiamo
+we leave
+partite
+you leave (plur.)
+partono
+they leave
+capisco
+I understand
+capisci
+you understand
+capisce
+he understands
+capiamo
+we understand
+capite
+you understand (plur.)
+capiscono
+they understand

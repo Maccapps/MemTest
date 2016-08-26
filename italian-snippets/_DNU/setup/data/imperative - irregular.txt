@@ -1,0 +1,190 @@
+Sii!
+Be!
+Sia!
+Be! (sing., formal)
+Siamo!
+Let's be!
+Siate!
+Be!
+Siano!
+Be! (plur., formal)
+Abbi!
+Have!
+Abbia!
+Have! (sing., formal)
+Abbiamo!
+Let's have!
+Abbiate!
+Have!
+Abbiano!
+Have! (plur., formal)
+Fa'; fai!
+Do!
+Faccia!
+Do! (sing., formal)
+Facciamo!
+Let's do!
+Fate!
+Do!
+Facciano!
+Do! (plur., formal)
+Va'; vai!
+Go!
+Vada!
+Go! (sing., formal)
+Andiamo!
+Let's go!
+Andate!
+Go!
+Vadano!
+Go! (plur., formal)
+Da'; dai!
+Give!
+Dia!
+Give! (sing., formal)
+Diamo!
+Let's give!
+Date!
+Give!
+Diano!
+Give! (plur., formal)
+Ama!
+Love!
+Ami!
+Love! (sing., formal)
+Amiamo!
+Let's love!
+Amate!
+Love!
+Amino!
+Love! (plur., formal)
+Puoi!
+Be able!
+Possa!
+Be able! (sing., formal)
+Possiamo!
+Let's be able!
+Potete!
+Be able!
+Possano!
+Be able! (plur., formal)
+Sappi!
+Know! (facts and skills)
+Sappia!
+Know! (sing., formal) (facts and skills)
+Sappiamo!
+Let's know! (facts and skills)
+Sapete!
+Know! (facts and skills)
+Sappiano!
+Know! (facts and skills)(plur., formal)
+Devi!
+Have to!
+Debba!
+Have to! (sing., formal)
+Dobbiamo!
+Let's have to!
+Dovete!
+Have to!
+Debbano!
+Have to! (plur., formal)
+Prendi!
+Take!
+Prenda!
+Take! (sing., formal)
+Prendiamo!
+Let's take!
+Prendete!
+Take!
+Prendano!
+Take! (plur., formal)
+Vedi!
+See!
+Veda; vegga!
+See! (sing., formal)
+Vediamo!
+Let's see!
+Vedete!
+See!
+Vedano; veggano!
+See! (plur., formal)
+Vogli!
+Want!
+Voglia!
+Want! (sing., formal)
+Vogliamo!
+Let's want!
+Vogliate!
+Want!
+Vogliano!
+Want! (plur., formal)
+Metti!
+Put!
+Metta!
+Put! (sing., formal)
+Mettiamo!
+Let's put!
+Mettete!
+Put!
+Mettano!
+Put! (plur., formal)
+Bevi!
+Drink!
+Beva!
+Drink! (sing., formal)
+Beviamo!
+Let's drink!
+Bevete!
+Drink!
+Bevano!
+Drink! (plur., formal)
+Leggi!
+Read!
+Legga!
+Read! (sing., formal)
+Leggiamo!
+Let's read!
+Leggete!
+Read!
+Leggano!
+Read! (plur., formal)
+Vali!
+Be worth!
+Valga; vaglia!
+Be worth! (sing., formal)
+Valiamo; valghiamo!
+Let's be worth!
+Valete!
+Be worth!
+Valgano; vagliano!
+Be worth! (plur., formal)
+Di'!
+Say!
+Dica!
+Say! (sing., formal)
+Diciamo!
+Let's say!
+Dite!
+Say!
+Dicano!
+Say! (plur., formal)
+Vieni!
+Come!
+Venga!
+Come! (sing., formal)
+Veniamo!
+Let's come!
+Venite!
+Come!
+Vengano!
+Come! (plur., formal)
+Finisci!
+End!
+Finisca!
+End! (sing., formal)
+Finiamo!
+Let's end!
+Finite!
+End!
+Finiscano!
+End! (plur., formal)

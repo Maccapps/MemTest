@@ -1,0 +1,48 @@
+parlerò
+I will speak
+parlerai
+you will speak
+parlerà
+he will speak
+parleremo
+we will speak
+parlerete
+you will speak (plur.)
+parleranno
+they will speak
+crederò
+I will believe
+crederai
+you will believe
+crederà
+he will believe
+crederemo
+we will believe
+crederete
+you will believe (plur.)
+crederanno
+they will believe
+partirò
+I will leave
+partirai
+you will leave
+partirà
+he will leave
+partiremo
+we will leave
+partirete
+you will leave (plur.)
+partiranno
+they will leave
+capirò
+I will understand
+capirai
+you will understand
+capirà
+he will understand
+capiremo
+we will understand
+capirete
+you will understand (plur.)
+capiranno
+they will understand

@@ -1,0 +1,240 @@
+avrò stato
+I will have been
+avrai stato
+you will have been
+avrà stato
+he will have been
+avremo stato
+we will have been
+avrete stato
+you will have been (plur.)
+avranno stato
+they will have been
+sarò stato
+I will have been (permanent state)
+sarai stato
+you will have been (permanent state)
+sarà stato
+he will have been (permanent state)
+saremo stati
+we will have been (permanent state)
+sarete stati
+you will have been (permanent state) (plur.)
+saranno stati
+they will have been (permanent state)
+avrò avuto
+I will have had
+avrai avuto
+you will have had
+avrà avuto
+he will have had
+avremo avuto
+we will have had
+avrete avuto
+you will have had (plur.)
+avranno avuto
+they will have had
+avrò fatto
+I will have done
+avrai fatto
+you will have done
+avrà fatto
+he will have done
+avremo fatto
+we will have done
+avrete fatto
+you will have done (plur.)
+avranno fatto
+they will have done
+sarò andato
+I will have gone
+sarai andato
+you will have gone
+sarà andato
+he will have gone
+saremo andati
+we will have gone
+sarete andati
+you will have gone (plur.)
+saranno andati
+they will have gone
+avrò dato
+I will have given
+avrai dato
+you will have given
+avrà dato
+he will have given
+avremo dato
+we will have given
+avrete dato
+you will have given (plur.)
+avranno dato
+they will have given
+avrò amato
+I will have loved
+avrai amato
+you will have loved
+avrà amato
+he will have loved
+avremo amato
+we will have loved
+avrete amato
+you will have loved (plur.)
+avranno amato
+they will have loved
+avrò potuto
+I will have been able (to)
+avrai potuto
+you will have been able (to)
+avrà potuto
+he will have been able (to)
+avremo potuto
+we will have been able (to)
+avrete potuto
+you will have been able (to) (plur.)
+avranno potuto
+they will have been able (to)
+avrò saputo
+I will have known (facts and skills)
+avrai saputo
+you will have known (facts and skills)
+avrà saputo
+he will have known (facts and skills)
+avremo saputo
+we will have known (facts and skills)
+avrete saputo
+you will have known (facts and skills) (plur.)
+avranno saputo
+they will have known (facts and skills)
+avrò dovuto
+I will have had to
+avrai dovuto
+you will have had to
+avrà dovuto
+he will have had to
+avremo dovuto
+we will have had to
+avrete dovuto
+you will have had to (plur.)
+avranno dovuto
+they will have had to
+avrò preso
+I will have taken
+avrai preso
+you will have taken
+avrà preso
+he will have taken
+avremo preso
+we will have taken
+avrete preso
+you will have taken (plur.)
+avranno preso
+they will have taken
+avrò veduto; visto
+I will have seen
+avrai veduto; visto
+you will have seen
+avrà veduto; visto
+he will have seen
+avremo veduto; visto
+we will have seen
+avrete veduto; visto
+you will have seen (plur.)
+avranno veduto; visto
+they will have seen
+avrò voluto
+I will have wanted
+avrai voluto
+you will have wanted
+avrà voluto
+he will have wanted
+avremo voluto
+we will have wanted
+avrete voluto
+you will have wanted (plur.)
+avranno voluto
+they will have wanted
+avrò messo
+I will have put
+avrai messo
+you will have put
+avrà messo
+he will have put
+avremo messo
+we will have put
+avrete messo
+you will have put (plur.)
+avranno messo
+they will have put
+avrò bevuto
+I will have drunk
+avrai bevuto
+you will have drunk
+avrà bevuto
+he will have drunk
+avremo bevuto
+we will have drunk
+avrete bevuto
+you will have drunk (plur.)
+avranno bevuto
+they will have drunk
+avrò letto
+I will have read
+avrai letto
+you will have read
+avrà letto
+he will have read
+avremo letto
+we will have read
+avrete letto
+you will have read (plur.)
+avranno letto
+they will have read
+sarò valso; valuto
+I will have been worth
+sarai valso; valuto
+you will have been worth
+sarà valso; valuto
+he will have been worth
+saremo valso; valuti
+we will have been worth
+sarete valso; valuti
+you will have been worth (plur.)
+saranno valso; valuti
+they will have been worth
+avrò detto
+I will have said
+avrai detto
+you will have said
+avrà detto
+he will have said
+avremo detto
+we will have said
+avrete detto
+you will have said (plur.)
+avranno detto
+they will have said
+sarò venuto
+I will have come
+sarai venuto
+you will have come
+sarà venuto
+he will have come
+saremo venuti
+we will have come
+sarete venuti
+you will have come (plur.)
+saranno venuti
+they will have come
+avrò finito; sarò finito
+I will have ended
+avrai finito; sarai finito
+you will have ended
+avrà finito; sarà finito
+he will have ended
+avremo finito; saremo finiti
+we will have ended
+avrete finito; sarete finiti
+you will have ended (plur.)
+avranno finito; saranno finiti
+they will have ended

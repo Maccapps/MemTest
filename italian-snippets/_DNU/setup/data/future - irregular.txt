@@ -1,0 +1,240 @@
+sarò
+I will be
+sarai
+you will be
+sarà
+he will be
+saremo
+we will be
+sarete
+you will be (plur.)
+saranno
+they will be
+starò
+I will be (permanent state)
+starai
+you will be (permanent state)
+starà
+he will be (permanent state)
+staremo
+we will be (permanent state)
+starete
+you will be (permanent state) (plur.)
+staranno
+they will be (permanent state)
+avrò
+I will have
+avrai
+you will have
+avrà
+he will have
+avremo
+we will have
+avrete
+you will have (plur.)
+avranno
+they will have
+farò
+I will do
+farai
+you will do
+farà
+he will do
+faremo
+we will do
+farete
+you will do (plur.)
+faranno
+they will do
+andrò
+I will go
+andrai
+you will go
+andrà
+he will go
+andremo
+we will go
+andrete
+you will go (plur.)
+andranno
+they will go
+darò
+I will give
+darai
+you will give
+darà
+he will give
+daremo
+we will give
+darete
+you will give (plur.)
+daranno
+they will give
+amerò
+I will love
+amerai
+you will love
+amerà
+he will love
+ameremo
+we will love
+amerete
+you will love (plur.)
+ameranno
+they will love
+potrò
+I will be able (to)
+potrai
+you will be able (to)
+potrà
+he will be able (to)
+potremo
+we will be able (to)
+potrete
+you will be able (to) (plur.)
+potranno
+they will be able (to)
+saprò
+I will know (facts and skills)
+saprai
+you will know (facts and skills)
+saprà
+he will know (facts and skills)
+sapremo
+we will know (facts and skills)
+saprete
+you will know (facts and skills) (plur.)
+sapranno
+they will know (facts and skills)
+dovrò
+I will have to
+dovrai
+you will have to
+dovrà
+he will have to
+dovremo
+we will have to
+dovrete
+you will have to (plur.)
+dovranno
+they will have to
+prenderò
+I will take
+prenderai
+you will take
+prenderà
+he will take
+prenderemo
+we will take
+prenderete
+you will take (plur.)
+prenderanno
+they will take
+vedrò
+I will see
+vedrai
+you will see
+vedrà
+he will see
+vedremo
+we will see
+vedrete
+you will see (plur.)
+vedranno
+they will see
+vorrò
+I will want
+vorrai
+you will want
+vorrà
+he will want
+vorremo
+we will want
+vorrete
+you will want (plur.)
+vorranno
+they will want
+metterò
+I will put
+metterai
+you will put
+metterà
+he will put
+metteremo
+we will put
+metterete
+you will put (plur.)
+metteranno
+they will put
+berrò
+I will drink
+berrai
+you will drink
+berrà
+he will drink
+berremo
+we will drink
+berrete
+you will drink (plur.)
+berranno
+they will drink
+leggerò
+I will read
+leggerai
+you will read
+leggerà
+he will read
+leggeremo
+we will read
+leggerete
+you will read (plur.)
+leggeranno
+they will read
+varrò
+I will be worth
+varrai
+you will be worth
+varrà
+he will be worth
+varremo
+we will be worth
+varrete
+you will be worth (plur.)
+varranno
+they will be worth
+dirò
+I will say
+dirai
+you will say
+dirà
+he will say
+diremo
+we will say
+direte
+you will say (plur.)
+diranno
+they will say
+verrò
+I will come
+verrai
+you will come
+verrà
+he will come
+verremo
+we will come
+verrete
+you will come (plur.)
+verranno
+they will come
+finirò
+I will end
+finirai
+you will end
+finirà
+he will end
+finiremo
+we will end
+finirete
+you will end (plur.)
+finiranno
+they will end

@@ -1,0 +1,48 @@
+ho parlato
+I have spoken
+hai parlato
+you have spoken
+ha parlato
+he has spoken
+abbiamo parlato
+we have spoken
+avete parlato
+you have spoken (plur.)
+hanno parlato
+they have spoken
+ho creduto
+I have believed
+hai creduto
+you have believed
+ha creduto
+he has believed
+abbiamo creduto
+we have believed
+avete creduto
+you have believed (plur.)
+hanno creduto
+they have believed
+sono partito
+I have left
+sei partito
+you have left
+è partito
+he has left
+siamo partiti
+we have left
+siete partiti
+you have left (plur.)
+sono partiti
+they have left
+ho capito
+I have understood
+hai capito
+you have understood
+ha capito
+he has understood
+abbiamo capito
+we have understood
+avete capito
+you have understood (plur.)
+hanno capito
+they have understood

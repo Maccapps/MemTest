@@ -1,0 +1,240 @@
+sarei
+I would be
+saresti
+you would be
+sarebbe
+he would be
+saremmo
+we would be
+sareste
+you would be (plur.)
+sarebbero
+they would be
+starei
+I would be (permanent state)
+staresti
+you would be (permanent state)
+starebbe
+he would be (permanent state)
+staremmo
+we would be (permanent state)
+stareste
+you would be (permanent state) (plur.)
+starebbero
+they would be (permanent state)
+avrei
+I would have
+avresti
+you would have
+avrebbe
+he would have
+avremmo
+we would have
+avreste
+you would have (plur.)
+avrebbero
+they would have
+farei
+I would do
+faresti
+you would do
+farebbe
+he would do
+faremmo
+we would do
+fareste
+you would do (plur.)
+farebbero
+they would do
+andrei
+I would go
+andresti
+you would go
+andrebbe
+he would go
+andremmo
+we would go
+andreste
+you would go (plur.)
+andrebbero
+they would go
+darei
+I would give
+daresti
+you would give
+darebbe
+he would give
+daremmo
+we would give
+dareste
+you would give (plur.)
+darebbero
+they would give
+amerei
+I would love
+ameresti
+you would love
+amerebbe
+he would love
+ameremmo
+we would love
+amereste
+you would love (plur.)
+amerebbero
+they would love
+potrei
+I would be able (to)
+potresti
+you would be able (to)
+potrebbe
+he would be able (to)
+potremmo
+we would be able (to)
+potreste
+you would be able (to) (plur.)
+potrebbero
+they would be able (to)
+saprei
+I would know (facts and skills)
+sapresti
+you would know (facts and skills)
+saprebbe
+he would know (facts and skills)
+sapremmo
+we would know (facts and skills)
+sapreste
+you would know (facts and skills) (plur.)
+saprebbero
+they would know (facts and skills)
+dovrei
+I would have to
+dovresti
+you would have to
+dovrebbe
+he would have to
+dovremmo
+we would have to
+dovreste
+you would have to (plur.)
+dovrebbero
+they would have to
+prenderei
+I would take
+prenderesti
+you would take
+prenderebbe
+he would take
+prenderemmo
+we would take
+prendereste
+you would take (plur.)
+prenderebbero
+they would take
+vedrei
+I would see
+vedresti
+you would see
+vedrebbe
+he would see
+vedremmo
+we would see
+vedreste
+you would see (plur.)
+vedrebbero
+they would see
+vorrei
+I would want
+vorresti
+you would want
+vorrebbe
+he would want
+vorremmo
+we would want
+vorreste
+you would want (plur.)
+vorrebbero
+they would want
+metterei
+I would put
+metteresti
+you would put
+metterebbe
+he would put
+metteremmo
+we would put
+mettereste
+you would put (plur.)
+metterebbero
+they would put
+berrei
+I would drink
+berresti
+you would drink
+berrebbe
+he would drink
+berremmo
+we would drink
+berreste
+you would drink (plur.)
+berrebbero
+they would drink
+leggerei
+I would read
+leggeresti
+you would read
+leggerebbe
+he would read
+leggeremmo
+we would read
+leggereste
+you would read (plur.)
+leggerebbero
+they would read
+varrei
+I would be worth
+varresti
+you would be worth
+varrebbe
+he would be worth
+varremmo
+we would be worth
+varreste
+you would be worth (plur.)
+varrebbero
+they would be worth
+direi
+I would say
+diresti
+you would say
+direbbe
+he would say
+diremmo
+we would say
+direste
+you would say (plur.)
+direbbero
+they would say
+verrei
+I would come
+verresti
+you would come
+verrebbe
+he would come
+verremmo
+we would come
+verreste
+you would come (plur.)
+verrebbero
+they would come
+finirei
+I would end
+finiresti
+you would end
+finirebbe
+he would end
+finiremmo
+we would end
+finireste
+you would end (plur.)
+finirebbero
+they would end
