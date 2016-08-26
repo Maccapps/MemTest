@@ -1,14 +1,15 @@
 .refresh { position:absolute; width:18px; height:18px; background:url(../../global/img/refresh.png); top:22px; right:10px; cursor:pointer; }
 
-.pronoun-holder { display:inline-block;width:100%; margin: 10px 0 10px 12px; }
+.pronoun-holder { display:inline-block;width:340px; margin:9px 0 5px 6px; }
+.btn.onesixth-width { width:44px; margin:0 0 0 12px; float:left; padding:0; }
+.btn.onesixth-width p { padding:5px; }
 
 .searchInputHolder { position:relative; }
 .searchInputHolder .clear { position: absolute; right: 16px; height: 31px; line-height: 31px; top: 1px; cursor:pointer; }
 input { padding:5px 10px; width:341px; margin: 0 0 0 9px;}
 #clipboardTarget { opacity:0; height:1px;}
 
-.btn.onesixth-width { width:44px; margin:0 14px 0 0; float:left; padding:0; }
-.btn.onesixth-width p { padding:5px; }
+
 #results {  }
 .type { margin:10px 10px 0 9px ; border:1px solid #aaa; padding:5px 10px 0; background:#fff;}
 .type h2 {font-size:80%; font-weight:normal; color:#888; }
