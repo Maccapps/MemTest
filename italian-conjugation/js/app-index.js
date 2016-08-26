@@ -13,10 +13,9 @@ var oApp = window.oApp || {};
 
     oApp.ls = oApp.getLs() || {};
 
-    //new Clipboard('#clipboardTarget');
+    new Clipboard('#clipboardTarget');
 
     oApp.loadDataAndStart = function () {
-        console.log('loadDataAndStart');
         $.getJSON(oApp.jsonFeedUrlBase + 'italian/conjugations', function (json) {
             oApp.ls.conjugations = oApp.ls.conjugations || {};
             oApp.ls.conjugations = json;
@@ -65,7 +64,6 @@ var oApp = window.oApp || {};
         $('#results').html('');
 
         for (tItem in tLoop) {
-            //console.group(tItem);
             hasPronouns = tLoop[tItem].hasPronouns;
             vLoop = tLoop[tItem].data;
             for (vItem in vLoop) {
@@ -77,16 +75,14 @@ var oApp = window.oApp || {};
                 } else {
                     pLoop = vLoop[vItem];
                     for (pItem in pLoop) {
-                        if (oApp.settings.pronouns[pItem] === true && q === tItem || ((pLoop[pItem].en.toLowerCase().indexOf(q) > -1 || pLoop[pItem].it.toLowerCase().indexOf(q) > -1))) {
+                        if (oApp.settings.pronouns[pItem] === true && (q === tItem || ((pLoop[pItem].en.toLowerCase().indexOf(q) > -1 || pLoop[pItem].it.toLowerCase().indexOf(q) > -1)))) {
                             results[tItem] = results[tItem] || [];
                             results[tItem].push(pLoop[pItem]);
                         }
                     }
                 }
             }
-            //console.groupEnd();
         }
-        //console.log(results);
         oApp.outputResults(results);
 
     };
@@ -101,7 +97,6 @@ var oApp = window.oApp || {};
             HTML += '<div class="type"><h2>' + tItem + '</h2>';
             vLoop = results[tItem];
             for (vItem in vLoop) {
-                //console.log(tItem, vLoop[vItem]);
                 HTML += '<div class="item"><p class="en">' + vLoop[vItem].en + '</p><p class="it">' + vLoop[vItem].it + '</p></div>';
             }
             HTML += '</div>';
