@@ -26,8 +26,44 @@ var oApp = window.oApp || {};
 
     oApp.settings = oApp.settings || {};
     oApp.settings.pronouns = [true, false, false, false, false, false];
+    oApp.settings.tenses = {};
+    oApp.settings.tenses['present - regular'] = {it: 'Il presente)', show: true};
+    oApp.settings.tenses['present - irregular'] = {it: 'Il presente)', show: true};
+    oApp.settings.tenses['present perfect - regular'] = {it: 'Il passato prossimo)', show: true};
+    oApp.settings.tenses['present perfect - irregular'] = {it: 'Il passato prossimo)', show: true};
+    oApp.settings.tenses['imperfect - regular'] = {it: 'l\'imperfetto)', show: true};
+    oApp.settings.tenses['imperfect - irregular'] = {it: 'l\'imperfetto)', show: true};
+    oApp.settings.tenses['future - regular'] = {it: 'Il futuro semplice)', show: true};
+    oApp.settings.tenses['future - irregular'] = {it: 'Il futuro semplice)', show: true};
 
 
+
+    oApp.settings.tenses['conditional past - irregular'] = {it: 'il condizionale passato', show: false};
+    oApp.settings.tenses['conditional past - regular'] = {it: 'il condizionale passato', show: false};
+    oApp.settings.tenses['conditional present - irregular'] = {it: 'il condizionale presente', show: false};
+    oApp.settings.tenses['conditional present - regular'] = {it: 'il condizionale presente', show: false};
+    oApp.settings.tenses['future perfect - irregular'] = {it: 'Il futuro anteriore)', show: false};
+    oApp.settings.tenses['future perfect - regular'] = {it: 'Il futuro anteriore)', show: false};
+    oApp.settings.tenses['gerund - irregular'] = {it: 'gerundio', show: false};
+    oApp.settings.tenses['gerund - regular'] = {it: 'gerundio', show: false};
+    oApp.settings.tenses['imperative - irregular'] = {it: 'l\'imperativo', show: false};
+    oApp.settings.tenses['imperative - regular'] = {it: 'l\'imperativo', show: false};
+    oApp.settings.tenses['imperfect progressive - irregular'] = {it: 'xxx', show: false};
+    oApp.settings.tenses['imperfect progressive - regular'] = {it: 'xxx', show: false};
+    oApp.settings.tenses['infinitive'] = {it: 'infinito', show: false};
+    oApp.settings.tenses['past participle - irregular'] = {it: 'passato participio', show: false};
+    oApp.settings.tenses['past participle - regular'] = {it: 'passato participio', show: false};
+    oApp.settings.tenses['past perfect - irregular'] = {it: 'Il trapassato prossimo)', show: false};
+    oApp.settings.tenses['past perfect - regular'] = {it: 'Il trapassato prossimo)', show: false};
+    oApp.settings.tenses['past simple - irregular'] = {it: 'xxx', show: false};
+    oApp.settings.tenses['past simple - regular'] = {it: 'xxx', show: false};
+
+    oApp.settings.tenses['present participle - irregular'] = {it: 'presente participio', show: false};
+    oApp.settings.tenses['present participle - regular'] = {it: 'presente participio', show: false};
+    oApp.settings.tenses['present progressive - irregular'] = {it: 'xxx', show: false};
+    oApp.settings.tenses['present progressive - regular'] = {it: 'xxx', show: false};
+    oApp.settings.tenses['subjunctive imperfect - irregular'] = {it: 'Il congiuntivo imperfetto)', show: false};
+    oApp.settings.tenses['subjunctive imperfect - regular'] = {it: 'Il congiuntivo imperfetto)', show: false};
 
     oApp.setPronounButtons = function () {
         $('.jsPronounHolder .jsPronouns').each(function (idx) {
@@ -64,6 +100,9 @@ var oApp = window.oApp || {};
         $('#results').html('');
 
         for (tItem in tLoop) {
+            if (oApp.settings.tenses[tItem].show !== true) {
+                continue;
+            }
             hasPronouns = tLoop[tItem].hasPronouns;
             vLoop = tLoop[tItem].data;
             for (vItem in vLoop) {
@@ -88,18 +127,27 @@ var oApp = window.oApp || {};
     };
 
     oApp.outputResults = function (results) {
-        var vLoop,
+        var vItem,
+            vLoop,
             tItem,
-            vItem,
+            tLoop = results,
+            aItem,
+            aLoop = oApp.settings.tenses,
+
             HTML = '';
 
-        for (tItem in results) {
-            HTML += '<div class="type"><h2>' + tItem + '</h2>';
-            vLoop = results[tItem];
-            for (vItem in vLoop) {
-                HTML += '<div class="item"><p class="en">' + vLoop[vItem].en + '</p><p class="it">' + vLoop[vItem].it + '</p></div>';
+        for (aItem in aLoop) {
+            for (tItem in tLoop) {
+                if (tItem !== aItem) {
+                    continue;
+                }
+                HTML += '<div class="type"><h2>' + tItem + ' <span>(' + oApp.settings.tenses[tItem].it + ')</span></h2>';
+                vLoop = tLoop[tItem];
+                for (vItem in vLoop) {
+                    HTML += '<div class="item"><p class="en">' + vLoop[vItem].en + '</p><p class="it">' + vLoop[vItem].it + '</p></div>';
+                }
+                HTML += '</div>';
             }
-            HTML += '</div>';
         }
 
         $('#results').html(HTML);
@@ -117,6 +165,9 @@ var oApp = window.oApp || {};
         $('#results').html('');
 
         for (tItem in tLoop) {
+            if (oApp.settings.tenses[tItem].show !== true) {
+                continue;
+            }
             hasPronouns = tLoop[tItem].hasPronouns;
             vLoop = tLoop[tItem].data;
             results[tItem] = results[tItem] || [];
@@ -143,6 +194,7 @@ var oApp = window.oApp || {};
 
     $('.refresh').click(function () {
         oApp.loadDataAndStart();
+        oApp.doSearch();
     });
 
     $('.jsSearchInput').keyup(function () {
@@ -166,7 +218,10 @@ var oApp = window.oApp || {};
 
     $('#results').on('click', 'h2', function () {
         var el = $(this),
-            type = el.html();
+            type = el.text();
+
+        el.find('span').html('');
+        type = el.text().trim();
 
         $('.jsSearchInput').val(type);
         oApp.q = type;
@@ -176,6 +231,7 @@ var oApp = window.oApp || {};
     $('.jsClearInput').click(function () {
         $('.jsSearchInput').val('');
         oApp.q = '';
+        $('.jsSearchInput').focus();
         oApp.doSearch();
     });
 
