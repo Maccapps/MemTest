@@ -9,6 +9,8 @@ var oApp = window.oApp || {};
 
     oApp.ls = oApp.getLs() || {};
    
+    oApp.ls.books.currentLang = oApp.ls.books.currentLang || 'it';
+
     oApp.showChapters = function (bookid) {
 
         var HTML = '';
@@ -18,7 +20,7 @@ var oApp = window.oApp || {};
                 var chapter = oApp.ls.books.chapters[bookid][i];
                 HTML += '<p class="book-list-item">';
                 HTML += '<span class="list-link jsShowChapter">' + i + '</span>';
-                HTML += '<span class="jsLangSwitch show-it">';
+                HTML += '<span class="jsLangSwitch show-' + oApp.ls.books.currentLang + '">';
                 HTML += '<span class="it">' + chapter.it + '</span>';
                 HTML += '<span class="en">' + chapter.en + '</span>';
                 HTML += '</span>';
@@ -31,7 +33,7 @@ var oApp = window.oApp || {};
 
     var book = oApp.ls.books.books[oApp.ls.books.currentBook],
         HTML = '';
-        HTML += '<span class="jsLangSwitch show-it">';
+        HTML += '<span class="jsLangSwitch show-' + oApp.ls.books.currentLang + '">';
         HTML += '<span class="it">' + book.it + '</span>';
         HTML += '<span class="en">' + book.en + '</span>';
         HTML += '</span>';

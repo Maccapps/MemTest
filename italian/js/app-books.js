@@ -47,8 +47,10 @@ var oApp = window.oApp || {};
     });
 
     $('body').on('click', '.jsShowBook', function () {
-        var id = $(this).html();
+        var id = $(this).html(),
+            lang = $(this).next('.jsLangSwitch').hasClass('show-en') ? 'en' : 'it';
         oApp.ls.books.currentBook = id;
+        oApp.ls.books.currentLang = lang;
         oApp.setLs(oApp.ls);
         window.location = 'book-list-chapters.php';
     });

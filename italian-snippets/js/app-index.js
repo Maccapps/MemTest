@@ -122,6 +122,7 @@ var oApp = window.oApp || {};
 
     $('.refresh').click(function () {
         oApp.loadDataAndStart();
+        oApp.doSearch();
     });
 
     $('.jsSearchInput').keyup(function () {
@@ -155,6 +156,7 @@ var oApp = window.oApp || {};
     $('.jsClearInput').click(function () {
         $('.jsSearchInput').val('');
         oApp.q = '';
+        $('.jsSearchInput').focus();
         oApp.doSearch();
     });
 

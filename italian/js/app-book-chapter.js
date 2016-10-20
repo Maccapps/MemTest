@@ -8,7 +8,9 @@ var oApp = window.oApp || {};
     'use strict';
 
     oApp.ls = oApp.getLs() || {};
-   
+
+    oApp.ls.books.currentLang = oApp.ls.books.currentLang || 'it';
+
     oApp.showSentences = function (bookid, chapterid) {
         console.log('showSentences', bookid, chapterid);
         var HTML = '',
@@ -26,7 +28,7 @@ var oApp = window.oApp || {};
                     paragraphIdx++;
                 }
                 HTML += '<p class="book-list-item">';
-                HTML += '<span class="jsLangSwitch show-it">';
+                HTML += '<span class="jsLangSwitch show-' + oApp.ls.books.currentLang + '">';
                 HTML += '<span class="it">' + sentence.it + '</span>';
                 HTML += '<span class="en">' + sentence.en + '</span>';
                 HTML += '</span>';
@@ -41,7 +43,7 @@ var oApp = window.oApp || {};
 
     var chapter = oApp.ls.books.chapters[oApp.ls.books.currentBook][oApp.ls.books.currentChapter],
         HTML = '';
-        HTML += '<span class="jsLangSwitch show-it">';
+        HTML += '<span class="jsLangSwitch show-' + oApp.ls.books.currentLang + '">';
         HTML += '<span class="it">' + chapter.it + '</span>';
         HTML += '<span class="en">' + chapter.en + '</span>';
         HTML += '</span>';
